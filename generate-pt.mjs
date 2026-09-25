@@ -42,8 +42,27 @@ const pairs = [
   // ---------- case section ----------
   [">Case studies</div>", ">Estudos de caso</div>"],
   [">Selected work</h2>", ">Trabalhos selecionados</h2>"],
-  ["Seven projects that represent the range of what I build — from zero-to-one monitoring platforms to consumer UX redesigns, evidence microservices, geospatial MVPs, fraud detection systems, and operational automation tools.",
-   "Sete projetos que mostram a amplitude do que eu construo: de plataformas de monitoramento do zero a redesenhos de UX de consumo, microsserviços de evidência, MVPs geoespaciais, sistemas de detecção de fraude e ferramentas de automação operacional."],
+  ["Eight projects that represent the range of what I build — from zero-to-one monitoring platforms to consumer UX redesigns, evidence microservices, geospatial MVPs, fraud detection systems, operational automation tools, and a collaborative music app built end-to-end with AI.",
+   "Oito projetos que mostram a amplitude do que eu construo: de plataformas de monitoramento do zero a redesenhos de UX de consumo, microsserviços de evidência, MVPs geoespaciais, sistemas de detecção de fraude, ferramentas de automação operacional e um app de playlist colaborativa feito de ponta a ponta com IA."],
+
+  // ---------- case 08 playlist da galera ----------
+  ["08 · Personal project · 2026", "08 · Projeto pessoal · 2026"],
+  [">Playlist da Galera — Collaborative Party Playlists</div>", ">Playlist da Galera — Playlists Colaborativas de Rolê</div>"],
+  ["Built with AI · No login · Live demo ↗", "Feito com IA · Sem login · Demo ao vivo ↗"],
+  ["Every hangout has the same fight: whoever plugs in their phone owns the music, and one person's taste floods the whole night. A shared playlist never quite feels like <em>everyone's</em>.",
+   "Todo rolê tem a mesma treta: quem pluga o celular manda na música, e o gosto de uma pessoa domina a noite inteira. Uma playlist compartilhada nunca parece ser <em>de todo mundo</em>."],
+  ["A web app where everyone drops the songs they like — by pasting a public Spotify or YouTube playlist, or just searching, <strong>with no login</strong> — and the app blends them into a single set with two rules: <strong>fairness</strong> (nobody monopolizes; equal space per person) and <strong>flow</strong> (an energy arc that starts calm and builds to the peak of the night, like a DJ). It plays right inside the app — cast to a TV through the clips — or exports to Spotify.",
+   "Um app web onde todo mundo joga as músicas que curte — colando uma playlist pública do Spotify ou do YouTube, ou só buscando, <strong>sem login</strong> — e o app mistura tudo num set só, com duas regras: <strong>justiça</strong> (ninguém monopoliza; cada pessoa tem o mesmo espaço) e <strong>fluxo</strong> (uma curva de energia que começa calma e sobe até o pico da noite, igual DJ). Dá pra tocar dentro do próprio app — jogar na TV pelos clipes — ou exportar pro Spotify."],
+  ['<strong>Blend:</strong> dedupes shared songs into "anchors", gives every person an equal quota, and orders tracks along an exponential energy arc toward the end-of-night anthems. <strong>Vibe:</strong> reads each track\'s mood from Last.fm tags (Spotify retired audio-features). <strong>No login at scale:</strong> resolves songs and clips by reading public Spotify/YouTube pages directly, bypassing the platforms\' account and quota limits — so anyone can contribute and play without signing in. <strong>Stack:</strong> React · Vite · Supabase Edge Functions · Last.fm · Vercel.',
+   '<strong>Blend:</strong> junta as músicas repetidas em "âncoras", dá a cada pessoa uma cota igual e ordena as faixas numa curva de energia exponencial rumo aos hinos do fim da festa. <strong>Vibe:</strong> lê o clima de cada faixa pelas tags do Last.fm (o Spotify aposentou os audio-features). <strong>Sem login em escala:</strong> resolve músicas e clipes lendo direto as páginas públicas do Spotify/YouTube, contornando os limites de conta e cota das plataformas — então qualquer um contribui e toca sem se cadastrar. <strong>Stack:</strong> React · Vite · Supabase Edge Functions · Last.fm · Vercel.'],
+  ["Built end-to-end with Claude Code over a weekend — the blend algorithm, caching, the in-app player, PT/EN i18n, PWA, and deploy. I described the problem and made the product calls; the AI wrote the code while I tested and steered. The hardest part wasn't the code — it was deciding what to cut and designing the experience around what the platforms actually allow.",
+   "Feito de ponta a ponta com o Claude Code num fim de semana — o algoritmo do blend, cache, o player embutido, i18n PT/EN, PWA e deploy. Eu descrevia o problema e tomava as decisões de produto; a IA escrevia o código enquanto eu testava e direcionava. A parte mais difícil não foi o código — foi decidir o que cortar e desenhar a experiência em cima do que as plataformas realmente permitem."],
+  [">Concept to live, solo</div>", ">Do conceito ao ar, sozinha</div>"],
+  [">To contribute, blend and play</div>", ">Pra contribuir, misturar e tocar</div>"],
+  [">Bilingual · installable (PWA)</div>", ">Bilíngue · instalável (PWA)</div>"],
+  [">1 weekend</div>", ">1 fim de semana</div>"],
+  [">View live ↗</a>", ">Ver ao vivo ↗</a>"],
+  [">Source on GitHub ↗</a>", ">Código no GitHub ↗</a>"],
 
   // repeated case labels
   [">The problem</div>", ">O problema</div>"],
