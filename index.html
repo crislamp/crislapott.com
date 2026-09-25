@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Crisla Pott · Senior Product Manager</title>
+<meta name="description" content="Senior PM with 8 years at Rappi. Backoffice products, real-time monitoring, post-order UX across 9 LATAM countries."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --ink: #e8eaf2;
+  --ink-2: #b0b8d4;
+  --ink-3: #6b7699;
+  --paper: #0f1120;
+  --paper-2: #161929;
+  --paper-3: #1d2235;
+  --accent: #5eead4;
+  --accent-light: rgba(94,234,212,0.1);
+  --accent-mid: #38bdf8;
+  --accent-purple: #a78bfa;
+  --rule: rgba(255,255,255,0.08);
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'DM Sans', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ── */
+.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+
+/* ── Nav ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15,17,32,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.875rem 0;
+}
+.nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-name {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.nav-links { display: flex; gap: 1.75rem; list-style: none; }
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+/* ── Hero ── */
+.hero {
+  padding: 4.5rem 0 3.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.hero::before {
+  display: none;
+}
+.hero-content {
+  max-width: 860px;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-mid);
+  margin-bottom: 1.5rem;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px; height: 1px;
+  background: var(--accent-mid);
+}
+.hero-name {
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+.hero-name em {
+  font-style: italic;
+  color: var(--accent);
+}
+.hero-title {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink-3);
+  letter-spacing: 0.03em;
+  margin-bottom: 2rem;
+}
+.hero-bio {
+  max-width: 100%;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--ink-2);
+  margin-bottom: 2.5rem;
+}
+.hero-bio strong { font-weight: 500; color: var(--ink); }
+.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #0f1120;
+  border: 1px solid var(--accent);
+}
+.btn-primary:hover { background: #2dd4bf; border-color: #2dd4bf; }
+.btn-ghost {
+  background: transparent;
+  color: var(--ink-2);
+  border: 1px solid var(--rule);
+}
+.btn-ghost:hover { border-color: var(--ink-3); color: var(--ink); }
+
+/* ── Section header ── */
+.section { padding: 5rem 0; border-bottom: 1px solid var(--rule); }
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 0.75rem;
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 14px; height: 1px;
+  background: var(--ink-3);
+}
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.section-intro {
+  font-size: 1rem;
+  color: var(--ink-3);
+  max-width: 100%;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+/* ── What I build ── */
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 2rem; }
+.pillar {
+  background: var(--paper-2);
+  padding: 2rem 1.75rem;
+  transition: background 0.2s;
+}
+.pillar:hover { background: var(--paper-3); }
+.pillar-title {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.pillar-text { font-size: 0.88rem; color: var(--ink-3); line-height: 1.65; }
+
+/* ── Case studies ── */
+.cases { display: flex; flex-direction: column; gap: 0; }
+.case {
+  border: 1px solid var(--rule);
+  border-bottom: none;
+  overflow: hidden;
+}
+.case:last-child { border-bottom: 1px solid var(--rule); }
+.case-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.75rem 2rem;
+  cursor: pointer;
+  transition: background 0.15s;
+  user-select: none;
+}
+.case-header:hover { background: var(--paper-3); }
+.case-header-left { flex: 1; }
+.case-num {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-mid);
+  margin-bottom: 0.35rem;
+}
+.case-name {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+.case-metric {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.2rem 0.7rem;
+  border-radius: 2px;
+  letter-spacing: 0.02em;
+}
+.case-toggle {
+  width: 28px; height: 28px;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--ink-3);
+  font-size: 1rem;
+  transition: all 0.25s;
+  margin-top: 0.25rem;
+}
+.case.open .case-toggle { transform: rotate(45deg); background: var(--accent); color: #fff; border-color: var(--accent); }
+.case-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.case.open .case-body { max-height: 1200px; }
+.case-content { padding: 0 2rem 2rem; }
+.case-content hr { border: none; border-top: 1px solid var(--rule); margin: 1.5rem 0; }
+.case-section-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 0.5rem;
+}
+.case-content p { font-size: 0.93rem; color: var(--ink-2); line-height: 1.7; margin-bottom: 0.75rem; }
+.case-content p:last-child { margin-bottom: 0; }
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin: 1rem 0;
+}
+.metric-item {
+  background: var(--paper-2);
+  padding: 1.1rem 1rem;
+}
+.metric-value {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.metric-label { font-size: 0.75rem; color: var(--ink-3); line-height: 1.4; }
+.tools-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.tool-tag {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  color: var(--ink-3);
+  background: var(--paper-3);
+}
+.ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-light);
+  border: 1px solid rgba(74,124,89,0.2);
+  padding: 0.25rem 0.8rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  display: inline-flex;
+}
+.case-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(74,124,89,0.3);
+  padding-bottom: 1px;
+  transition: border-color 0.2s;
+  margin-top: 0.75rem;
+}
+.case-link:hover { border-color: var(--accent); }
+
+/* ── Skills ── */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.skill-group-title {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-mid);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.skill-list { list-style: none; }
+.skill-list li {
+  font-size: 0.88rem;
+  color: var(--ink-2);
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.skill-list li::before {
+  content: '';
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--accent-mid);
+  flex-shrink: 0;
+}
+
+/* ── Languages ── */
+.lang-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 2rem; }
+.lang-item { background: var(--paper); padding: 1.5rem; }
+.lang-flag { font-size: 1.6rem; margin-bottom: 0.5rem; }
+.lang-name { font-family: var(--serif); font-size: 1.1rem; color: var(--ink); margin-bottom: 0.2rem; }
+.lang-level { font-size: 0.8rem; color: var(--ink-3); }
+
+/* ── Contact ── */
+.contact-section {
+  padding: 5rem 0 4rem;
+}
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+.contact-blurb {
+  font-size: 1rem;
+  color: var(--ink-3);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+.contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.contact-link:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
+.contact-link-icon { font-size: 1rem; width: 20px; text-align: center; }
+.avail-box {
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  padding: 1.75rem;
+  border-radius: 2px;
+}
+.avail-title {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.avail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--ink-2);
+  margin-bottom: 0.6rem;
+}
+.avail-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.avail-dot.pulse { animation: pulse 2s infinite; }
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+/* ── Footer ── */
+footer {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--rule);
+}
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer-name { font-family: var(--serif); font-size: 0.95rem; color: var(--ink-3); }
+.footer-note { font-size: 0.75rem; color: var(--ink-3); }
+
+/* ── Animations ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* ── Timeline ── */
+.timeline { display: flex; flex-direction: column; gap: 0; margin-top: 2rem; }
+.tl-item {
+  display: grid;
+  grid-template-columns: 130px 24px 1fr;
+  gap: 0 1rem;
+  position: relative;
+}
+.tl-item:not(:last-child) .tl-dot::after {
+  content: '';
+  position: absolute;
+  left: 130px;
+  top: 24px;
+  width: 1px;
+  bottom: 0;
+  background: var(--rule);
+  margin-left: 11px;
+}
+.tl-left { padding-top: 0.2rem; text-align: right; }
+.tl-date {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.tl-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--paper);
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 3px rgba(94,234,212,0.15);
+}
+.tl-dot-muted {
+  background: var(--ink-3);
+  box-shadow: none;
+}
+.tl-right { padding-bottom: 2rem; }
+.tl-role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+  margin-top: 0.05rem;
+}
+.tl-desc { font-size: 0.88rem; color: var(--ink-3); line-height: 1.6; }
+
+/* ── Education ── */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin-top: 2rem;
+}
+.edu-item {
+  background: var(--paper-2);
+  padding: 1.5rem 1.75rem;
+}
+.edu-year {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.edu-school {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+.edu-degree { font-size: 0.88rem; color: var(--ink-2); line-height: 1.5; margin-bottom: 0.4rem; }
+.edu-note { font-size: 0.8rem; color: var(--ink-3); font-style: italic; line-height: 1.5; }
+
+/* ── Hero photo ── */
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+.hero-photo { flex-shrink: 0; }
+.hero-photo-img {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(94,234,212,0.3);
+  box-shadow: 0 0 0 4px rgba(94,234,212,0.08);
+  display: block;
+}
+.hero-intro { flex: 1; }
+.hero-avail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--accent);
+  opacity: 0.8;
+  letter-spacing: 0.02em;
+}
+.hero-avail::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+
+/* ── Pillar icon SVG ── */
+.pillar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; height: 40px;
+  border-radius: 8px;
+  background: var(--accent-light);
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* ── Alternating section backgrounds ── */
+#about { background: var(--paper); }
+#work { background: var(--paper-2); }
+#skills { background: var(--paper); }
+#career { background: var(--paper-2); }
+#education { background: var(--paper); }
+.contact-section { background: var(--paper-2); }
+
+/* ── Hotzones demo ── */
+.hz-demo {
+  margin: 1.25rem 0;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--paper-3);
+}
+.hz-map-wrap { width: 100%; background: #0a0e1a; }
+.hz-controls {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--rule);
+}
+.hz-time-wrap { display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; }
+.hz-time-label { font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+.hz-time { font-family: var(--serif); font-size: 1.2rem; color: var(--accent); line-height: 1; }
+.hz-legend { display: flex; gap: 0.6rem; flex-wrap: wrap; flex: 1; }
+.hz-leg-item { display: flex; align-items: center; gap: 4px; font-size: 0.7rem; color: var(--ink-3); }
+.hz-leg-dot { width: 10px; height: 10px; border-radius: 2px; border: 1px solid rgba(255,255,255,0.1); }
+.hz-btns { display: flex; align-items: center; gap: 0.75rem; }
+
+/* ── Round Border demo ── */
+.rb-demo {
+  margin: 1.25rem 0;
+  border: 1px solid var(--rule);
+  border-radius: var(--border-radius-lg, 8px);
+  overflow: hidden;
+  background: var(--paper-3);
+}
+.rb-demo-inner { display: flex; flex-direction: column; }
+.rb-map { width: 100%; }
+.rb-map svg { width: 100%; height: auto; display: block; }
+.rb-controls {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--rule);
+}
+.rb-btn {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.35rem 0.9rem;
+  border-radius: 99px;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--sans);
+}
+.rb-btn.active, .rb-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+}
+.rb-status {
+  font-size: 0.78rem;
+  color: var(--ink-3);
+  flex: 1;
+  text-align: right;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .hero { padding: 4rem 0 3.5rem; }
+  .hero-top { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .case-header { padding: 1.25rem; }
+  .case-content { padding: 0 1.25rem 1.5rem; }
+  .tl-item { grid-template-columns: 90px 20px 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="#">Crisla Pott</a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Senior Product Manager</div>
+      <div class="hero-top">
+        <div class="hero-photo">
+          <img src="photo.png" alt="Crisla Pott" class="hero-photo-img"/>
+        </div>
+        <div class="hero-intro">
+          <h1 class="hero-name">Crisla<br><em>Pott</em></h1>
+          <p class="hero-title">Backoffice &amp; Marketplace · LATAM &amp; Global</p>
+        </div>
+      </div>
+      <p class="hero-bio">
+        I build the systems that <strong>keep operations running</strong> — real-time monitoring platforms, backoffice tooling, and post-order UX that scale across markets and teams. Eight years at Rappi, shipping products used across <strong>9 countries in Latin America</strong>.<br><br>
+        I started in field ops and grew into full product ownership by building from scratch — connecting engineering, ops, and business around shared problems. I use AI tools as a core part of how I work, every day. I thrive where there's no playbook yet.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#work">See my work ↓</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/crisla-pott/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <span class="hero-avail">Open to new opportunities as of 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I BUILD -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">What I build</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="pillar-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h.01M11 8h6M7 12h10"/></svg>
+        </span>
+        <h3 class="pillar-title">Backoffice products</h3>
+        <p class="pillar-text">Tools that ops teams actually use — monitoring platforms, internal dashboards, incident response systems. Built for scale, not for demos.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M12 8v4l3 3"/><path d="M16.5 7.5 19 5M7.5 7.5 5 5"/></svg>
+        </span>
+        <h3 class="pillar-title">Post-order &amp; cancellations UX</h3>
+        <p class="pillar-text">The flows that save orders, protect revenue, and keep customers. 1,700+ orders recovered per week across 9 countries.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V11h2a2 2 0 0 1 2 2v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1v-1a2 2 0 0 1 2-2h2V9.5C8.8 8.8 8 7.5 8 6a4 4 0 0 1 4-4z"/></svg>
+        </span>
+        <h3 class="pillar-title">Building with AI</h3>
+        <p class="pillar-text">I use Claude, ChatGPT, and Claude Code to build real things — from PRDs to full products like Hotzones, shipped end-to-end with AI as co-pilot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-label">Case studies</div>
+    <h2 class="section-title">Selected work</h2>
+    <p class="section-intro">Seven projects that represent the range of what I build — from zero-to-one monitoring platforms to consumer UX redesigns, evidence microservices, geospatial MVPs, fraud detection systems, and operational automation tools.</p>
+
+    <div class="cases">
+
+      <!-- OCC -->
+      <div class="case" id="case-occ">
+        <div class="case-header" onclick="toggleCase('case-occ')">
+          <div class="case-header-left">
+            <div class="case-num">01 · LATAM Marketplace · 2020–2023</div>
+            <div class="case-name">Ops Control Center (OCC)</div>
+            <span class="case-metric">Hundreds of thousands saved/yr · &lt;5 min response · 9 countries</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <div class="case-section-label">The problem</div>
+            <p>A large LATAM marketplace's operations were reactive by design. When a restaurant integration failed, a payment processor went down, or supply-demand imbalances spiked, the ops team discovered problems through <strong>customer complaints — not early detection</strong>. Incident response took over an hour. By then, hundreds of orders were affected and recovery costs were high. No centralized monitoring, no automation, no shared playbook across countries.</p>
+            <hr/>
+            <div class="case-section-label">Approach</div>
+            <p>Rather than patching individual problems, I focused on building infrastructure for proactive operations — a system that could detect anomalies in real time, route them to the right people, and resolve them before they escalated. <strong>Foundation before headcount</strong>: tooling first, then team structure.</p>
+            <hr/>
+            <div class="case-section-label">Key decisions &amp; projects</div>
+            <p><strong>100+ real-time alerts</strong> built from scratch to detect anomalies across integrations, payments, restaurant performance, and supply — all verticals, 9 countries.</p>
+            <p><strong>10+ automation bots</strong> for escalation, containment, and reporting — eliminating manual work that previously required dedicated headcount.</p>
+            <p><strong>Holiday operations framework:</strong> Plug-and-play playbooks for peak days — pre-activating monitoring rules and response teams before incidents could occur.</p>
+            <hr/>
+            <div class="case-section-label">My role</div>
+            <p>OCC strategy &amp; design · Backoffice product ownership · Process architecture &amp; documentation · Ops-to-tech translation · Cross-functional alignment · Team efficiency &amp; automation.</p>
+            <hr/>
+            <div class="case-section-label">Impact</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">&lt;5 min</div>
+                <div class="metric-label">Incident response (from 1+ hour)</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">100s of K</div>
+                <div class="metric-label">Annual savings via automation</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">150→30</div>
+                <div class="metric-label">Ops team size through automation</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">9</div>
+                <div class="metric-label">Countries, all verticals</div>
+              </div>
+            </div>
+            <div class="case-section-label">What I learned</div>
+            <p>Operational excellence is a product problem. The best interventions weren't process changes — they were systems that anticipated failures, automated response, and freed humans to focus on judgment-heavy exceptions. <em>You can't fix what you can't see.</em></p>
+            <div class="case-section-label" style="margin-top:1rem">Tools</div>
+            <div class="tools-row">
+              <span class="tool-tag">SQL</span>
+              <span class="tool-tag">Amplitude</span>
+              <span class="tool-tag">Looker</span>
+              <span class="tool-tag">Jira</span>
+              <span class="tool-tag">Automation bots</span>
+              <span class="tool-tag">Real-time alerting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CANCELLATIONS -->
+      <div class="case" id="case-cancel">
+        <div class="case-header" onclick="toggleCase('case-cancel')">
+          <div class="case-header-left">
+            <div class="case-num">02 · LATAM Marketplace · 2026</div>
+            <div class="case-name">Cancellations UX Redesign</div>
+            <span class="case-metric">1,700+ orders saved per week · 9 countries</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <div class="case-section-label">The problem</div>
+            <p>When users wanted to cancel an order, the platform's flow went straight to confirmation — with no attempt to understand why or offer alternatives. Many cancellation intents were actually <strong>fixable problems</strong>: wrong address, preferred payment method unavailable, or order running late. The result was avoidable order loss, revenue impact, and a poor experience for users who would have stayed if given the right option at the right moment.</p>
+            <hr/>
+            <div class="case-section-label">Approach</div>
+            <p>Rather than accepting cancellation as the default outcome, the new flow <strong>intercepts the moment of intent</strong> and presents the user with relevant alternatives: change the delivery address, switch payment method, or accept a compensation to wait for a delayed order. Each option is shown conditionally — only when technically feasible and contextually relevant. The right option at the right moment creates retention; an irrelevant one creates friction.</p>
+            <hr/>
+            <div class="case-section-label">Key decisions</div>
+            <p><strong>Foundation first:</strong> modernized the underlying tech infrastructure with engineering before shipping any new UX — to avoid building on a fragile base that would limit future iterations.</p>
+            <p><strong>Context-driven logic:</strong> designed rules for when to show each modification option based on order status, vertical, and cancellation reason — not a one-size-fits-all screen.</p>
+            <p><strong>Validated incrementally:</strong> launched delay compensation first as the simplest, most measurable intervention — generating proof of concept before investing in more complex modification flows.</p>
+            <hr/>
+            <div class="case-section-label">My role</div>
+            <p>End-to-end PRD ownership · Problem framing &amp; solution scoping · Cross-functional alignment with engineering, design, data, and ops · A/B test design &amp; metric definition · Prioritization of rollout sequence across modification types.</p>
+            <hr/>
+            <div class="case-section-label">Impact</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">1,700</div>
+                <div class="metric-label">Orders saved per week via compensation offer</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Modification types: address, payment, delivery time</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">9</div>
+                <div class="metric-label">Countries across LATAM marketplace</div>
+              </div>
+            </div>
+            <div class="case-section-label">Tools</div>
+            <div class="tools-row">
+              <span class="tool-tag">Amplitude</span>
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">Jira</span>
+              <span class="tool-tag">A/B testing</span>
+              <span class="tool-tag">SQL</span>
+            </div>
+            <hr/>
+            <div class="case-section-label">Related initiative — VoIP integration (Amazon Chime)</div>
+            <p>Led the scoping, spec, and delivery of a VoIP integration using Amazon Chime — covering permission flows and fallback logic for Android and iOS. <strong>Shipped to 80% of the user base</strong>. Designed to improve courier-user contactability, reduce "customer not home" cancellations, and decrease order not delivered complaints.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ORDER NOT DELIVERED -->
+      <div class="case" id="case-ond">
+        <div class="case-header" onclick="toggleCase('case-ond')">
+          <div class="case-header-left">
+            <div class="case-num">03 · LATAM Marketplace · OCC umbrella</div>
+            <div class="case-name">Order Not Delivered — Delivery Evidence Microservice</div>
+            <span class="case-metric">Tens of thousands saved/month · &lt;5 sec diagnosis · 9 countries</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <div class="case-section-label">The problem</div>
+            <p>Every day, thousands of customers opened support tickets claiming their order never arrived. The support team had no way to determine who was telling the truth — the driver claimed delivery, the customer claimed otherwise. With no evidence system, the default was to compensate the customer to avoid risk. This created two problems: <strong>significant monthly costs from unwarranted payouts</strong>, and no way to identify patterns of fraud or driver misconduct.</p>
+            <hr/>
+            <div class="case-section-label">Approach</div>
+            <p>Rather than relying on manual case review, I led the development of a microservice that automatically analyzes the full order lifecycle at the moment a customer opens a ticket. The key insight: <strong>the evidence already existed in our systems</strong> — geolocation, photos, timestamps, chat history. We just needed to connect it and surface it at the right moment, before a human made a decision.</p>
+            <hr/>
+            <div class="case-section-label">Key decisions</div>
+            <p><strong>Prioritized 'order not delivered'</strong> over other defect types (damaged product, poor quality) because it had the highest user friction and the richest evidence trail.</p>
+            <p><strong>Built the diagnosis at ticket-creation time</strong> — so the support agent received the evidence before making any decision, not as an afterthought.</p>
+            <p><strong>Designed the output as a clear recommendation</strong> (evidence found / not found) rather than raw data — reducing cognitive load on support agents and standardizing decisions across teams.</p>
+            <p><strong>Launched first in smaller markets</strong> (Uruguay, Peru) as a controlled experiment. Initial results were below expectations, so we refined the model before rolling out to larger markets.</p>
+            <hr/>
+            <div class="case-section-label">My role</div>
+            <p>End-to-end problem framing &amp; solution scoping · Alignment with engineering and support teams · Prioritization rationale &amp; rollout sequencing · Experiment design &amp; post-launch iteration.</p>
+            <hr/>
+            <div class="case-section-label">Impact</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">10s of K</div>
+                <div class="metric-label">Monthly reduction in unwarranted payouts</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">&lt;5 sec</div>
+                <div class="metric-label">Time to generate delivery diagnosis</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">9</div>
+                <div class="metric-label">Countries after full rollout</div>
+              </div>
+            </div>
+            <div class="case-section-label">What I learned</div>
+            <p>Beyond cost savings, the system created a consistent, data-driven standard for resolving disputed deliveries — reducing variability across support agents and countries. The evidence was always there. The product problem was surfacing it at the right moment.</p>
+            <div class="case-section-label" style="margin-top:1rem">Tools</div>
+            <div class="tools-row">
+              <span class="tool-tag">Microservice architecture</span>
+              <span class="tool-tag">Geolocation data</span>
+              <span class="tool-tag">SQL</span>
+              <span class="tool-tag">Experiment design</span>
+              <span class="tool-tag">Support tooling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOTZONES -->
+      <div class="case" id="case-hot">
+        <div class="case-header" onclick="toggleCase('case-hot')">
+          <div class="case-header-left">
+            <div class="case-num">04 · Personal project · 2025</div>
+            <div class="case-name">Hotzones MVP — Demand Forecasting Map</div>
+            <span class="case-metric">Built solo · AI + AWS · Live demo ↗</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <span class="ai-badge">⚡ AI-assisted build</span>
+            <div class="case-section-label">The context</div>
+            <p>A personal project to prove a concept: a solo PM, using AI tools and cloud infrastructure, can ship a working geospatial product in a short iteration cycle — without a dedicated engineering team.</p>
+            <hr/>
+            <div class="case-section-label">What I built</div>
+            <p>An interactive demand forecasting map for Bogotá that shows where food delivery orders concentrate across the city, in 30-minute time windows, for the next 3 days. Couriers see where demand is heading before it peaks. The same architecture scales to any city with order history.</p>
+
+            <div class="hz-demo">
+              <div class="hz-map-wrap" style="position:relative;height:280px;">
+                <div id="hz-map" style="width:100%;height:100%;"></div>
+                <svg id="hz-svg" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;"></svg>
+                <div style="position:absolute;top:10px;left:10px;background:rgba(6,8,20,.85);border:0.5px solid rgba(255,255,255,.15);border-radius:6px;padding:6px 12px;z-index:1000;">
+                  <div style="font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:2px;">Time window</div>
+                  <div id="hz-time" style="font-family:var(--serif);font-size:1.1rem;color:#5eead4;line-height:1;">08:00</div>
+                </div>
+                <div style="position:absolute;top:10px;right:10px;background:rgba(6,8,20,.85);border:0.5px solid rgba(255,255,255,.15);border-radius:6px;padding:6px 10px;z-index:1000;display:flex;flex-direction:column;gap:4px;">
+                  <div style="font-size:9px;color:rgba(255,255,255,.35);letter-spacing:.05em;">HOTZONE SCORE</div>
+                  <div style="display:flex;gap:4px;align-items:center;">
+                    <div style="width:10px;height:10px;border-radius:2px;background:#0d1a2e;border:1px solid rgba(255,255,255,.1)"></div>
+                    <div style="width:10px;height:10px;border-radius:2px;background:#0c3954"></div>
+                    <div style="width:10px;height:10px;border-radius:2px;background:#0369a1"></div>
+                    <div style="width:10px;height:10px;border-radius:2px;background:#0ea5e9"></div>
+                    <div style="width:10px;height:10px;border-radius:2px;background:#5eead4"></div>
+                    <span style="font-size:9px;color:rgba(255,255,255,.35);margin-left:2px;">1 → 5</span>
+                  </div>
+                </div>
+                <div style="position:absolute;bottom:10px;right:10px;z-index:1000;">
+                  <button onclick="hzToggle()" id="hz-btn-play" style="font-size:11px;padding:5px 12px;border-radius:99px;border:1px solid rgba(94,234,212,0.4);background:rgba(94,234,212,0.1);color:#5eead4;cursor:pointer;font-family:var(--sans);">⏸ Pause</button>
+                </div>
+              </div>
+            </div>
+            <hr/>
+            <div class="case-section-label">How it works</div>
+            <p><strong>Data:</strong> 30-day order history (lat/lng, timestamp). <strong>Spatial indexing:</strong> Uber H3 hexagonal grid at resolution 9 (~0.1 km² per cell). <strong>Forecast:</strong> Statistical demand profile per hex — fully explainable, no black box. <strong>Score:</strong> Percentile ranking (1–5) per time window, the same approach used by Uber and DoorDash. <strong>Exclusion:</strong> AK30 highway corridor removed via buffer geometry — a real operational barrier in Bogotá logistics. <strong>Stack:</strong> Python · pandas · h3 · shapely · Kepler.gl · AWS S3.</p>
+            <hr/>
+            <div class="case-section-label">How AI was used</div>
+            <p>ChatGPT and Claude throughout the pipeline: architecture design, geospatial edge case debugging, Python scripts, scoring methodology validation. Claude Code for refactoring. From concept to live demo in a few weeks of part-time work.</p>
+            <hr/>
+            <div class="case-section-label">Impact</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">3 days</div>
+                <div class="metric-label">Forecast horizon</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">30 min</div>
+                <div class="metric-label">Time granularity</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">H3 r9</div>
+                <div class="metric-label">~0.1 km² per hex cell</div>
+              </div>
+            </div>
+            <div class="case-section-label">Tools</div>
+            <div class="tools-row">
+              <span class="tool-tag">Python</span>
+              <span class="tool-tag">H3 (Uber)</span>
+              <span class="tool-tag">pandas</span>
+              <span class="tool-tag">shapely</span>
+              <span class="tool-tag">GeoJSON</span>
+              <span class="tool-tag">Kepler.gl</span>
+              <span class="tool-tag">AWS S3</span>
+              <span class="tool-tag">ChatGPT</span>
+              <span class="tool-tag">Claude</span>
+            </div>
+            <a class="case-link" href="http://hotzones-bogota.s3-website-us-east-1.amazonaws.com/" target="_blank" rel="noopener">View live demo ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FRAUD DETECTION -->
+      <div class="case" id="case-fraud">
+        <div class="case-header" onclick="toggleCase('case-fraud')">
+          <div class="case-header-left">
+            <div class="case-num">05 · Personal project · In progress</div>
+            <div class="case-name">AI Fraud-Detection — Driver Onboarding Pipeline</div>
+            <span class="case-metric">Self-initiated · Claude Code · Python · In progress</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <span class="ai-badge">⚡ AI-native build · Claude Code</span>
+            <div class="case-section-label">The problem</div>
+            <p>Delivery platforms in LATAM face a growing threat during driver onboarding: <strong>synthetic-identity fraud</strong> — AI-generated profile photos reused across multiple fraudulent driver registrations under different documents. Manual fraud review is slow, inconsistent, and doesn't scale. No automated system existed to detect fraud rings across applications.</p>
+            <hr/>
+            <div class="case-section-label">What I'm building</div>
+            <p>An end-to-end fraud-detection pipeline covering three layers of defense: <strong>document OCR cross-validation</strong> to catch inconsistencies between submitted documents; <strong>AI-generated image detection</strong> to flag synthetic profile photos; and <strong>facial-embedding deduplication</strong> to surface fraud rings — the same face registered under multiple different identities.</p>
+            <hr/>
+            <div class="case-section-label">Key decisions</div>
+            <p><strong>Translated a manual process into automatable rules first</strong> — mapped every step the ops fraud-review team did manually, identified which decisions followed consistent logic, and converted those into business rules and risk-scoring thresholds before writing a single line of code.</p>
+            <p><strong>Modular architecture</strong> — each detection layer (OCR, image, face) operates independently, so the system can flag a case based on any single signal or a combination, and each module can be iterated without breaking the others.</p>
+            <p><strong>Risk scoring output, not binary decisions</strong> — the system surfaces a risk score and evidence summary for human review, rather than auto-rejecting applications, keeping a human in the loop for edge cases.</p>
+            <hr/>
+            <div class="case-section-label">How AI was used</div>
+            <p>Claude Code as the primary development partner: scaffolding the pipeline architecture, iterating on the OCR validation logic, debugging embedding comparisons, and reviewing the risk-scoring model. This is consistent with my AI-first building approach — AI as co-pilot from architecture to implementation.</p>
+            <hr/>
+            <div class="case-section-label">Stack</div>
+            <div class="tools-row">
+              <span class="tool-tag">Python</span>
+              <span class="tool-tag">Tesseract / EasyOCR</span>
+              <span class="tool-tag">Facial recognition embeddings</span>
+              <span class="tool-tag">Google Cloud Vision API</span>
+              <span class="tool-tag">Claude Code</span>
+              <span class="tool-tag">Risk scoring logic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROUND BORDER -->
+      <div class="case" id="case-rb">
+        <div class="case-header" onclick="toggleCase('case-rb')">
+          <div class="case-header-left">
+            <div class="case-num">06 · LATAM Marketplace · Operations Lead</div>
+            <div class="case-name">Round Border — Automated Store Closures for Mass Events</div>
+            <span class="case-metric">9 countries · 100% automated · 2 closure modes</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <div class="case-section-label">The problem</div>
+            <p>During mass events — carnival street parties, protests, large concerts, elections — the ops team had to <strong>manually identify which stores fell inside the affected area and close them individually</strong> at the right time. This was slow, error-prone, and entirely dependent on someone scanning a map and remembering to act at the exact moment the event started.</p>
+            <hr/>
+            <div class="case-section-label">What we built</div>
+            <p>A tool that automates the entire process: input a location, define an affected area, and the system identifies and schedules closures automatically. Two modes to match real-world event shapes: <strong>radius mode</strong> for point-based events (concerts, stadiums) and <strong>line mode</strong> for linear events (parade routes, marches), each expandable by a custom distance.</p>
+
+            <div class="rb-demo" style="border:none;background:transparent;">
+              <div style="position:relative;height:280px;border:1px solid var(--rule);border-radius:8px;overflow:hidden;">
+                <div id="rb-map" style="width:100%;height:100%;"></div>
+                <!-- overlays injected by JS -->
+                <div id="rb-overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:800;"></div>
+                <div style="position:absolute;top:10px;left:50%;transform:translateX(-50%);background:rgba(6,8,20,.88);border:0.5px solid rgba(255,255,255,.2);border-radius:8px;padding:7px 18px;color:rgba(255,255,255,.93);font-size:13px;font-weight:600;z-index:1000;white-space:nowrap;" id="rb-badge">Radius Closure</div>
+                <div style="position:absolute;top:10px;right:12px;background:rgba(226,75,74,.15);border:.5px solid rgba(226,75,74,.4);border-radius:5px;padding:4px 9px;font-size:11px;color:rgba(226,75,74,.95);z-index:1000;" id="rb-count">0 stores closed</div>
+                <div style="position:absolute;bottom:10px;left:12px;background:rgba(0,0,0,.5);padding:4px 10px;border-radius:5px;display:flex;gap:12px;z-index:1000;">
+                  <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(255,255,255,.45);">
+                    <div style="width:9px;height:9px;border-radius:50%;border:1.5px solid #1D9E75;background:rgba(29,158,117,.25)"></div>Open
+                  </div>
+                  <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(255,255,255,.45);">
+                    <div style="width:9px;height:9px;border-radius:50%;border:1.5px solid #E24B4A;background:rgba(226,75,74,.25)"></div>Closed
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr/>
+            <div class="case-section-label">Key decisions</div>
+            <p><strong>Scheduled closures at the exact event time</strong> — removing the ops team from having to be present at a specific hour and manually trigger anything.</p>
+            <p><strong>Built line mode as a second iteration</strong> — after seeing that many real-world events (parades, marches) don't fit a simple radius, expanding applicability without adding complexity.</p>
+            <p><strong>Scaled across all 9 countries</strong> once validated — disruptive events (protests, holidays, elections) are a universal operational challenge, not market-specific.</p>
+            <hr/>
+            <div class="case-section-label">Impact</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">9</div>
+                <div class="metric-label">Countries using the tool</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">2</div>
+                <div class="metric-label">Closure modes: radius & line</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">100%</div>
+                <div class="metric-label">Automated execution at event time</div>
+              </div>
+            </div>
+            <p>Customers didn't place orders that couldn't be fulfilled. Couriers weren't sent into unsafe areas. Stores weren't overwhelmed trying to serve demand they couldn't meet. The team no longer needed to manually monitor or intervene at the exact moment an event began.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHATSAPP BOT -->
+      <div class="case" id="case-wa">
+        <div class="case-header" onclick="toggleCase('case-wa')">
+          <div class="case-header-left">
+            <div class="case-num">07 · LATAM Marketplace · Product Operations</div>
+            <div class="case-name">Store Supervisor Automation — WhatsApp Bot</div>
+            <span class="case-metric">~80% reduction in on-site supervisors · 9 countries · 0 drop in quality</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <div class="case-section-label">The problem</div>
+            <p>Store supervisors across the grocery/mart operation were spending most of their time solving <strong>algorithm-driven problems</strong> — courier assignment, order cancellations, routing — rather than focusing on in-store quality. The root cause wasn't a staffing issue. It was a product gap: the work these supervisors were doing didn't require physical presence, but no system existed to let them do it remotely.</p>
+            <hr/>
+            <div class="case-section-label">Solution</div>
+            <p>A <strong>WhatsApp-based bot</strong> where shoppers identify themselves and select their issue from a structured list. Simple cases resolve automatically; complex cases route to a remote support queue. WhatsApp was chosen because it required zero onboarding — shoppers already used it daily.</p>
+            <hr/>
+            <div class="case-section-label">Key decisions</div>
+            <p><strong>Single global decision tree</strong> — one structured taxonomy covering all markets, rather than bespoke flows per country.</p>
+            <p><strong>Human team for judgment-only cases</strong> — only genuinely complex issues reached a person, keeping the support team small and focused.</p>
+            <p><strong>Full interaction logging</strong> — every conversation created a data trail for tracking resolution time and identifying patterns for future automation.</p>
+            <hr/>
+            <div class="case-section-label">My role</div>
+            <p>Problem identification &amp; reframing (staffing → product) · End-to-end solution design &amp; issue taxonomy · Cross-functional delivery with engineering · Rollout across 9 countries.</p>
+            <hr/>
+            <div class="case-section-label">Impact</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">~80%</div>
+                <div class="metric-label">Reduction in on-site supervisors needed</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">9</div>
+                <div class="metric-label">Countries covered</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">0</div>
+                <div class="metric-label">Drop in in-store quality metrics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-label">Tools &amp; skills</div>
+    <h2 class="section-title">How I work</h2>
+    <div class="skills-grid">
+      <div>
+        <div class="skill-group-title">Analytics & data</div>
+        <ul class="skill-list">
+          <li>SQL</li>
+          <li>Amplitude</li>
+          <li>Snowflake · Redash</li>
+          <li>Power BI · Looker</li>
+        </ul>
+      </div>
+      <div>
+        <div class="skill-group-title">AI tools</div>
+        <ul class="skill-list">
+          <li>Claude &amp; Claude Code</li>
+          <li>ChatGPT</li>
+          <li>Building products with AI</li>
+          <li>Discovery &amp; PRD drafting</li>
+          <li>Prototyping &amp; test generation</li>
+        </ul>
+      </div>
+      <div>
+        <div class="skill-group-title">Data &amp; geospatial</div>
+        <ul class="skill-list">
+          <li>Python · pandas</li>
+          <li>H3 (Uber) · GeoJSON</li>
+          <li>Kepler.gl · AWS S3</li>
+        </ul>
+      </div>
+      <div>
+        <div class="skill-group-title">Engineering collab</div>
+        <ul class="skill-list">
+          <li>Jira · Confluence</li>
+          <li>Figma · Charles</li>
+          <li>Bitbucket · GitHub</li>
+          <li>Jenkins (basic)</li>
+        </ul>
+      </div>
+      <div>
+        <div class="skill-group-title">Languages</div>
+        <ul class="skill-list">
+          <li>🇧🇷 Portuguese — native</li>
+          <li>🇪🇸 Spanish — bilingual</li>
+          <li>🇬🇧 English — professional</li>
+        </ul>
+      </div>
+      <div>
+        <div class="skill-group-title">Process</div>
+        <ul class="skill-list">
+          <li>Discovery &amp; roadmapping</li>
+          <li>Agile · sprint ceremonies</li>
+          <li>User stories &amp; PRDs</li>
+          <li>A/B testing &amp; experimentation</li>
+          <li>Cross-country launches</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER PATH -->
+<section class="section" id="career">
+  <div class="container">
+    <div class="section-label">Career path</div>
+    <h2 class="section-title">8 years at Rappi</h2>
+    <p class="section-intro">From field operations in Porto Alegre to product ownership across 9 countries. Every role built on the one before it.</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-date">2022 – Jun 2026</div>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-right">
+          <div class="tl-role">Product Manager — Backoffice & Consumer</div>
+          <div class="tl-desc">Built and scaled a real-time monitoring platform across 9 LATAM countries. Owned roadmap for internal ops platforms — alerting, automation bots, monitoring dashboards. Shipped VoIP integration (Amazon Chime) to 80% of users. Built AI-powered evidence scoring for Order Not Delivered, saving $20K/month. Led cancellations UX redesign saving 1,700 orders/week.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-date">2019 – 2022</div>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-right">
+          <div class="tl-role">Operations Lead</div>
+          <div class="tl-desc">Built the Ops Control Center from scratch — reducing incident response from 1+ hour to under 5 minutes across 9 countries. Developed 50+ real-time marketplace alerts. Reduced operational headcount from 150 to 30 through automation, generating $500K/year in savings.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-date">Nov 2018 – 2019</div>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-right">
+          <div class="tl-role">Regional Operations Analyst & Supervisor</div>
+          <div class="tl-desc">Achieved the lowest cancellation rate among all Brazilian cities under direct management — establishing Porto Alegre as a national benchmark for live operations. Conceptualized processes later scaled to multiple Brazilian states.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left">
+          <div class="tl-date">Apr – Nov 2018</div>
+        </div>
+        <div class="tl-dot tl-dot-muted"></div>
+        <div class="tl-right">
+          <div class="tl-role">Operations Assistant</div>
+          <div class="tl-desc">Supported courier onboarding and troubleshooting. Built early analytical skills by identifying recurring courier pain points and escalating patterns to the operations team.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-label">Education</div>
+    <h2 class="section-title">Academic background</h2>
+    <div class="edu-grid">
+      <div class="edu-item">
+        <div class="edu-year">2021 – 2023</div>
+        <div class="edu-school">Fundação Getúlio Vargas (FGV)</div>
+        <div class="edu-degree">Post-Graduate · Project Management, Strategy & Business</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2016 – 2018</div>
+        <div class="edu-school">UFRGS</div>
+        <div class="edu-degree">Master's · Ecology</div>
+        <div class="edu-note">Analytical rigor, complex systems thinking, data-driven methodology.</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2011 – 2015</div>
+        <div class="edu-school">UCPel</div>
+        <div class="edu-degree">Bachelor's · Ecology & Environmental Management</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Let's talk</h2>
+    <div class="contact-grid">
+      <div>
+        <p class="contact-blurb">I'm actively looking for my next PM role — remote-first, with a strong preference for products that serve real operational complexity at scale.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:crislapott@gmail.com">
+            <span class="contact-link-icon">✉</span>
+            crislapott@gmail.com
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/crisla-pott/" target="_blank" rel="noopener">
+            <span class="contact-link-icon">in</span>
+            linkedin.com/in/crisla-pott
+          </a>
+          <a class="contact-link" href="http://hotzones-bogota.s3-website-us-east-1.amazonaws.com/" target="_blank" rel="noopener">
+            <span class="contact-link-icon">🗺</span>
+            Hotzones live demo
+          </a>
+        </div>
+      </div>
+      <div class="avail-box">
+        <div class="avail-title">Availability</div>
+        <div class="avail-item"><div class="avail-dot pulse"></div>Open to new opportunities</div>
+        <div class="avail-item"><div class="avail-dot"></div>Remote globally</div>
+        <div class="avail-item"><div class="avail-dot"></div>Hybrid · Porto Alegre, Brazil</div>
+        <div class="avail-item"><div class="avail-dot"></div>Occasional travel to São Paulo</div>
+        <div class="avail-item"><div class="avail-dot"></div>UTC-3 · trilingual</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-name">Crisla Pott</span>
+    <span class="footer-note">Built with HTML · Hosted on AWS S3</span>
+  </div>
+</footer>
+
+<script>
+// Global wrappers — called before maps init
+function hzToggle() { if (window._hzToggle) window._hzToggle(); }
+function rbMode(mode) { if (window._rbMode) window._rbMode(mode); }
+
+// Hotzones hex animation — Bogotá real map with Leaflet
+function initHzMap() {
+  if (!document.getElementById('hz-map')) return;
+
+  const mapEl = document.getElementById('hz-map');
+  const svg = document.getElementById('hz-svg');
+
+  // Init Leaflet map centered on Bogotá
+  const hzMap = L.map('hz-map', {
+    center: [4.65, -74.10],
+    zoom: 14,
+    zoomControl: false,
+    attributionControl: false,
+    dragging: false,
+    scrollWheelZoom: false,
+    doubleClickZoom: false,
+    touchZoom: false,
+    keyboard: false
+  });
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    subdomains: 'abcd', maxZoom: 20
+  }).addTo(hzMap);
+
+  // Tight hex grid — step matches hex geometry so hexes tessellate perfectly
+  const dLat = 0.0018, dLng = 0.0022;
+  const stepLat = dLat * 1.5;
+  const stepLng = dLng * Math.sqrt(3);
+
+  const hexLatLngs = [];
+  let hRow = 0;
+  for (let lat = 4.54; lat < 4.82; lat += stepLat) {
+    const offset = (hRow % 2) * stepLng / 2;
+    for (let lng = -74.20; lng < -73.98; lng += stepLng) {
+      hexLatLngs.push([lat, lng + offset]);
+    }
+    hRow++;
+  }
+
+  const AK30_LNG = -74.07;
+  const scoreColors = ['rgba(13,26,46,0.55)','rgba(12,57,84,0.65)','rgba(3,105,161,0.7)','rgba(14,165,233,0.75)','rgba(94,234,212,0.8)'];
+
+  function hexLatLngPoly(lat, lng, dLat, dLng) {
+    const pts = [];
+    for (let i = 0; i < 6; i++) {
+      const a = Math.PI / 180 * (60 * i - 30);
+      pts.push([lat + dLat * Math.sin(a), lng + dLng * Math.cos(a)]);
+    }
+    return pts;
+  }
+  const hexLayers = hexLatLngs.map(([lat, lng]) => {
+    const poly = L.polygon(hexLatLngPoly(lat, lng, dLat, dLng), {
+      color: 'rgba(0,0,0,0.4)',
+      weight: 0.5,
+      fillColor: '#0d1a2e',
+      fillOpacity: 0.55
+    }).addTo(hzMap);
+    return { poly, lat, lng, baseScore: lng > AK30_LNG ? 0 : 1 };
+  });
+
+  // AK30 line
+  L.polyline([[4.82,-74.07],[4.49,-74.09]], {
+    color: 'rgba(251,191,36,0.6)', weight: 2, dashArray: '6,4'
+  }).addTo(hzMap);
+
+  // Demand zones [lat, lng, radius_deg, peakSlot, intensity]
+  const zones = [
+    { lat:4.75, lng:-74.13, r:0.07, peak:4,  intensity:3 },
+    { lat:4.65, lng:-74.09, r:0.09, peak:12, intensity:4 },
+    { lat:4.60, lng:-74.12, r:0.07, peak:14, intensity:3 },
+    { lat:4.63, lng:-74.11, r:0.08, peak:26, intensity:4 },
+    { lat:4.57, lng:-74.14, r:0.06, peak:28, intensity:3 },
+    { lat:4.70, lng:-74.15, r:0.06, peak:20, intensity:2 },
+  ];
+
+  const times = [];
+  for (let h = 6; h < 24; h++) {
+    times.push(`${String(h).padStart(2,'0')}:00`);
+    times.push(`${String(h).padStart(2,'0')}:30`);
+  }
+
+  let frame = 0, playing = true, animInterval;
+
+  function dist(lat1,lng1,lat2,lng2) {
+    return Math.sqrt((lat1-lat2)**2+(lng1-lng2)**2);
+  }
+
+  function render(t) {
+    hexLayers.forEach(h => {
+      let score = h.baseScore;
+      const eastPenalty = h.lng > AK30_LNG ? 1 : 0;
+      zones.forEach(z => {
+        const d = dist(h.lat, h.lng, z.lat, z.lng);
+        if (d < z.r) {
+          const proximity = 1 - d / z.r;
+          const timeDiff = Math.abs(t - z.peak);
+          const timeWeight = Math.max(0, 1 - timeDiff / 6);
+          score = Math.min(4, score + Math.round(proximity * timeWeight * z.intensity));
+        }
+      });
+      const s = Math.max(0, Math.min(4, score - eastPenalty));
+      h.poly.setStyle({ fillColor: scoreColors[s], fillOpacity: 0.6 });
+    });
+    const el = document.getElementById('hz-time');
+    if (el) el.textContent = times[t] || '06:00';
+  }
+
+  function hzTick() { render(frame); frame = (frame + 1) % times.length; }
+
+  function hzToggleInternal() {
+    playing = !playing;
+    const btn = document.getElementById('hz-btn-play');
+    if (playing) {
+      animInterval = setInterval(hzTick, 250);
+      if (btn) btn.textContent = '⏸ Pause';
+    } else {
+      clearInterval(animInterval);
+      if (btn) btn.textContent = '▶ Play';
+    }
+  }
+  window._hzToggle = hzToggleInternal;
+
+  render(frame);
+  animInterval = setInterval(hzTick, 250);
+}
+
+// Round Border demo — Leaflet map
+function initRbMap() {
+  if (!document.getElementById('rb-map')) return;
+
+  const rbMap = L.map('rb-map', {
+    center: [-23.5614, -46.6560],
+    zoom: 15,
+    zoomControl: false,
+    attributionControl: false,
+    dragging: false,
+    scrollWheelZoom: false,
+    doubleClickZoom: false,
+    touchZoom: false,
+    keyboard: false
+  });
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    subdomains: 'abcd', maxZoom: 20
+  }).addTo(rbMap);
+
+  const CX = [-23.5614, -46.6560];
+
+  // Store positions as lat/lng offsets from center
+  const storePositions = [
+    [-23.553,-46.668],[-23.558,-46.645],[-23.561,-46.651],
+    [-23.565,-46.662],[-23.560,-46.644],[-23.568,-46.670],
+    [-23.563,-46.655],[-23.558,-46.640],[-23.568,-46.659],
+    [-23.562,-46.647],[-23.556,-46.659],[-23.556,-46.640],
+  ];
+
+  const storeIcon = (closed) => L.divIcon({
+    className: '',
+    html: `<div style="width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;border:2px solid ${closed?'#E24B4A':'#1D9E75'};background:${closed?'rgba(226,75,74,.32)':'rgba(29,158,117,.28)'};box-shadow:0 0 10px ${closed?'rgba(226,75,74,.6)':'rgba(29,158,117,.5)'};transition:all .5s;">🏪</div>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14]
+  });
+
+  const storeMarkers = storePositions.map(pos =>
+    L.marker(pos, { icon: storeIcon(false) }).addTo(rbMap)
+  );
+
+  let radiusCircle = null, lineLayer = null, bufferLayer = null, centerMarker = null;
+  let autoTimer = null;
+  const badge = document.getElementById('rb-badge');
+  const countEl = document.getElementById('rb-count');
+
+  function resetStores() {
+    storeMarkers.forEach(m => m.setIcon(storeIcon(false)));
+    if (radiusCircle) { rbMap.removeLayer(radiusCircle); radiusCircle = null; }
+    if (lineLayer) { rbMap.removeLayer(lineLayer); lineLayer = null; }
+    if (bufferLayer) { rbMap.removeLayer(bufferLayer); bufferLayer = null; }
+    if (centerMarker) { rbMap.removeLayer(centerMarker); centerMarker = null; }
+    if (countEl) { countEl.textContent = '0 stores closed'; }
+  }
+
+  function closestDeg(lat1,lng1,lat2,lng2) {
+    return Math.sqrt((lat1-lat2)**2+(lng1-lng2)**2);
+  }
+
+  function distToLine(plat,plng,alat,alng,blat,blng) {
+    const dx=blng-alng, dy=blat-alat;
+    const t = Math.max(0,Math.min(1,((plng-alng)*dx+(plat-alat)*dy)/(dx*dx+dy*dy)));
+    return Math.sqrt((plng-(alng+t*dx))**2+(plat-(alat+t*dy))**2);
+  }
+
+  function updateCount() {
+    const n = storeMarkers.filter((_,i) =>
+      document.querySelector(`[data-closed-${i}]`) !== null
+    ).length;
+  }
+
+  function modeRadius() {
+    resetStores();
+    if (badge) badge.textContent = 'Mode 1 — Radius Closure';
+    const center = CX;
+    centerMarker = L.circleMarker(center, {
+      radius: 5, color: '#E24B4A', fillColor: '#E24B4A', fillOpacity: 1, weight: 0
+    }).addTo(rbMap);
+
+    let r = 0;
+    radiusCircle = L.circle(center, { radius: 0, color: '#E24B4A', fillColor: '#E24B4A', fillOpacity: 0.08, weight: 1.5, dashArray: '5,4' }).addTo(rbMap);
+    const FINAL_R = 600;
+    const steps = 50;
+    let step = 0;
+    const grow = setInterval(() => {
+      step++;
+      const t = step/steps;
+      const ease = t < .5 ? 2*t*t : -1+(4-2*t)*t;
+      r = ease * FINAL_R;
+      radiusCircle.setRadius(r);
+      let closed = 0;
+      storePositions.forEach((pos, i) => {
+        const d = rbMap.distance(center, pos);
+        const isClosed = d <= r;
+        if (isClosed) closed++;
+        storeMarkers[i].setIcon(storeIcon(isClosed));
+      });
+      if (countEl) countEl.textContent = closed + (closed===1?' store':' stores') + ' closed';
+      if (step >= steps) {
+        clearInterval(grow);
+        autoTimer = setTimeout(modeLine, 3000);
+      }
+    }, 40);
+  }
+
+  function modeLine() {
+    resetStores();
+    if (badge) badge.textContent = 'Mode 2 — Line Closure';
+    const A = [-23.5614, -46.668];
+    const B = [-23.5614, -46.645];
+    const BUFFER = 0.004;
+
+    let progress = 0;
+    const steps = 50;
+    const grow = setInterval(() => {
+      progress++;
+      const t = progress/steps;
+      const cur = [
+        A[0] + (B[0]-A[0])*t,
+        A[1] + (B[1]-A[1])*t
+      ];
+      if (lineLayer) rbMap.removeLayer(lineLayer);
+      lineLayer = L.polyline([A, cur], {
+        color: '#E24B4A', weight: 2.5, dashArray: '6,4', opacity: 0.9
+      }).addTo(rbMap);
+
+      if (progress >= steps) {
+        clearInterval(grow);
+        let bw = 0;
+        const bSteps = 40;
+        const expandBuf = setInterval(() => {
+          bw++;
+          const bt = bw/bSteps;
+          const ease = bt < .5 ? 2*bt*bt : -1+(4-2*bt)*bt;
+          const buf = ease * BUFFER;
+          if (bufferLayer) rbMap.removeLayer(bufferLayer);
+          const p1 = [A[0]-buf, A[1]], p2 = [A[0]+buf, A[1]];
+          const p3 = [B[0]+buf, B[1]], p4 = [B[0]-buf, B[1]];
+          bufferLayer = L.polygon([p1,p2,p3,p4], {
+            color: '#E24B4A', fillColor: '#E24B4A', fillOpacity: 0.12, weight: 1.5, opacity: 0.45
+          }).addTo(rbMap);
+          let closed = 0;
+          storePositions.forEach((pos, i) => {
+            const d = distToLine(pos[0],pos[1],A[0],A[1],B[0],B[1]);
+            const isClosed = d <= buf;
+            if (isClosed) closed++;
+            storeMarkers[i].setIcon(storeIcon(isClosed));
+          });
+          if (countEl) countEl.textContent = closed + (closed===1?' store':' stores') + ' closed';
+          if (bw >= bSteps) {
+            clearInterval(expandBuf);
+            autoTimer = setTimeout(() => { resetStores(); autoTimer = setTimeout(modeRadius, 800); }, 3000);
+          }
+        }, 30);
+      }
+    }, 28);
+  }
+
+  setTimeout(modeRadius, 800);
+}
+
+function toggleCase(id) {
+  const el = document.getElementById(id);
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.case.open').forEach(c => c.classList.remove('open'));
+  if (!isOpen) {
+    el.classList.add('open');
+    if (id === 'case-hot' || id === 'case-rb') {
+      loadLeaflet(() => {
+        setTimeout(() => {
+          if (id === 'case-hot' && !window._hzMapInit) { window._hzMapInit = true; initHzMap(); }
+          if (id === 'case-rb' && !window._rbMapInit) { window._rbMapInit = true; initRbMap(); }
+        }, 150);
+      });
+    }
+  }
+}
+
+function loadLeaflet(cb) {
+  if (window.L) { cb(); return; }
+  const css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+  document.head.appendChild(css);
+  const js = document.createElement('script');
+  js.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+  js.onload = cb;
+  document.head.appendChild(js);
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
