@@ -848,6 +848,9 @@ footer {
             <div class="case-section-label">How it works</div>
             <p><strong>Data:</strong> 30-day order history (lat/lng, timestamp). <strong>Spatial indexing:</strong> Uber H3 hexagonal grid at resolution 9 (~0.1 km² per cell). <strong>Forecast:</strong> Statistical demand profile per hex — fully explainable, no black box. <strong>Score:</strong> Percentile ranking (1–5) per time window, the same approach used by Uber and DoorDash. <strong>Exclusion:</strong> AK30 highway corridor removed via buffer geometry — a real operational barrier in Bogotá logistics. <strong>Stack:</strong> Python · pandas · h3 · shapely · Kepler.gl · AWS S3.</p>
             <hr/>
+            <div class="case-section-label">The hard part (that doesn't show)</div>
+            <p>This case looks the simplest of them all, but it was the one that took the most work — and almost none of it is visible on screen. The real effort was the geospatial groundwork: hunting down and stitching together several shapefiles for Bogotá and Colombia, clipping and cleaning the geometries, and defining the city's operational zones by hand so the H3 grid sat on top of a real, coherent map. The demo renders in seconds; getting the geography right took days.</p>
+            <hr/>
             <div class="case-section-label">How AI was used</div>
             <p>ChatGPT and Claude throughout the pipeline: architecture design, geospatial edge case debugging, Python scripts, scoring methodology validation. Claude Code for refactoring. From concept to live demo in a few weeks of part-time work.</p>
             <hr/>

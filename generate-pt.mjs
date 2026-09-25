@@ -175,6 +175,9 @@ const pairs = [
   [">Time granularity</div>", ">Granularidade de tempo</div>"],
   [">~0.1 km² per hex cell</div>", ">~0,1 km² por hexágono</div>"],
   [">View live demo ↗</a>", ">Ver demo ao vivo ↗</a>"],
+  [">The hard part (that doesn't show)</div>", ">O que deu trabalho (e não aparece)</div>"],
+  ["This case looks the simplest of them all, but it was the one that took the most work — and almost none of it is visible on screen. The real effort was the geospatial groundwork: hunting down and stitching together several shapefiles for Bogotá and Colombia, clipping and cleaning the geometries, and defining the city's operational zones by hand so the H3 grid sat on top of a real, coherent map. The demo renders in seconds; getting the geography right took days.",
+   "Este é o case que parece o mais simples de todos, mas foi o que mais deu trabalho — e quase nada disso aparece na tela. O grosso do esforço foi a base geoespacial: garimpar e juntar vários shapefiles de Bogotá e da Colômbia, recortar e limpar as geometrias, e definir na mão as zonas operacionais da cidade pra que a malha H3 caísse sobre um mapa real e coerente. O demo renderiza em segundos; acertar a geografia levou dias."],
   [">Time window</div>", ">Janela de tempo</div>"],
   [">HOTZONE SCORE</div>", ">PONTUAÇÃO HOTZONE</div>"],
 

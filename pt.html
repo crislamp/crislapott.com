@@ -848,6 +848,9 @@ footer {
             <div class="case-section-label">Como funciona</div>
             <p><strong>Dados:</strong> 30 dias de histórico de pedidos (lat/lng, timestamp). <strong>Indexação espacial:</strong> grade hexagonal Uber H3 na resolução 9 (~0,1 km² por célula). <strong>Previsão:</strong> perfil estatístico de demanda por hexágono — totalmente explicável, sem caixa-preta. <strong>Score:</strong> ranking por percentil (1–5) por janela de tempo, a mesma abordagem usada por Uber e DoorDash. <strong>Exclusão:</strong> o corredor da rodovia AK30 é removido via geometria de buffer — uma barreira operacional real na logística de Bogotá. <strong>Stack:</strong> Python · pandas · h3 · shapely · Kepler.gl · AWS S3.</p>
             <hr/>
+            <div class="case-section-label">O que deu trabalho (e não aparece)</div>
+            <p>Este é o case que parece o mais simples de todos, mas foi o que mais deu trabalho — e quase nada disso aparece na tela. O grosso do esforço foi a base geoespacial: garimpar e juntar vários shapefiles de Bogotá e da Colômbia, recortar e limpar as geometrias, e definir na mão as zonas operacionais da cidade pra que a malha H3 caísse sobre um mapa real e coerente. O demo renderiza em segundos; acertar a geografia levou dias.</p>
+            <hr/>
             <div class="case-section-label">Como usei IA</div>
             <p>ChatGPT e Claude em todo o pipeline: design de arquitetura, debug de casos extremos geoespaciais, scripts em Python, validação da metodologia de score. Claude Code para refatoração. Do conceito à demo ao vivo em algumas semanas de trabalho part-time.</p>
             <hr/>
