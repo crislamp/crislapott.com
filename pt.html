@@ -231,10 +231,25 @@ nav {
 .cases { display: flex; flex-direction: column; gap: 0; }
 .case {
   border: 1px solid var(--rule);
-  border-bottom: none;
   overflow: hidden;
 }
-.case:last-child { border-bottom: 1px solid var(--rule); }
+.case + .case { border-top: none; }
+.cases.collapsed .case.more { display: none; }
+.more-wrap { margin-top: 1.5rem; text-align: center; }
+.more-btn {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--ink-2);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.65rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.more-btn:hover { border-color: var(--accent); color: var(--accent); }
 .case-header {
   display: flex;
   align-items: flex-start;
@@ -784,185 +799,13 @@ footer {
     <h2 class="section-title">Trabalhos selecionados</h2>
     <p class="section-intro">Oito projetos que mostram a amplitude do que eu construo: de plataformas de monitoramento do zero a redesenhos de UX de consumo, microsserviços de evidência, MVPs geoespaciais, sistemas de detecção de fraude, ferramentas de automação operacional e um app de playlist colaborativa feito de ponta a ponta com IA.</p>
 
-    <div class="cases">
-
-      <!-- OCC -->
-      <div class="case" id="case-occ">
-        <div class="case-header" onclick="toggleCase('case-occ')">
-          <div class="case-header-left">
-            <div class="case-num">01 · Marketplace LATAM · 2020–2023</div>
-            <div class="case-name">Ops Control Center (OCC)</div>
-            <span class="case-metric">Centenas de milhares economizados/ano · resposta &lt;5 min · 9 países</span>
-          </div>
-          <div class="case-toggle">+</div>
-        </div>
-        <div class="case-body">
-          <div class="case-content">
-            <div class="case-section-label">O problema</div>
-            <p>A operação de um grande marketplace da América Latina era reativa por natureza. Quando uma integração de restaurante caía, um processador de pagamento saía do ar ou o desequilíbrio entre oferta e demanda disparava, o time descobria os problemas pelas <strong>reclamações dos clientes — não por detecção antecipada</strong>. Responder a um incidente levava mais de uma hora. A essa altura, centenas de pedidos já tinham sido afetados e o custo de recuperação era alto. Sem monitoramento centralizado, sem automação, sem um playbook comum entre os países.</p>
-            <hr/>
-            <div class="case-section-label">Abordagem</div>
-            <p>Em vez de remendar problemas isolados, foquei em construir infraestrutura para uma operação proativa — um sistema capaz de detectar anomalias em tempo real, direcioná-las às pessoas certas e resolvê-las antes de escalarem. <strong>Base antes de headcount</strong>: primeiro as ferramentas, depois a estrutura de time.</p>
-            <hr/>
-            <div class="case-section-label">Decisões e projetos-chave</div>
-            <p><strong>Mais de 100 alertas em tempo real</strong> criados do zero para detectar anomalias em integrações, pagamentos, performance de restaurantes e oferta — todas as verticais, 9 países.</p>
-            <p><strong>Mais de 10 bots de automação</strong> para escalonamento, contenção e reporte — eliminando trabalho manual que antes exigia gente dedicada.</p>
-            <p><strong>Framework de operação para feriados:</strong> playbooks plug-and-play para os dias de pico — pré-ativando regras de monitoramento e times de resposta antes que os incidentes acontecessem.</p>
-            <hr/>
-            <div class="case-section-label">Meu papel</div>
-            <p>Estratégia &amp; design do OCC · Ownership do produto de backoffice · Arquitetura &amp; documentação de processos · Tradução entre operação e tecnologia · Alinhamento cross-funcional · Eficiência de time &amp; automação.</p>
-            <hr/>
-            <div class="case-section-label">Impacto</div>
-            <div class="metrics-grid">
-              <div class="metric-item">
-                <div class="metric-value">&lt;5 min</div>
-                <div class="metric-label">Resposta a incidentes (de 1+ hora)</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-value">centenas de mil</div>
-                <div class="metric-label">Economia anual via automação</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-value">150→30</div>
-                <div class="metric-label">Tamanho do time de ops via automação</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-value">9</div>
-                <div class="metric-label">Países, todas as verticais</div>
-              </div>
-            </div>
-            <div class="case-section-label">O que aprendi</div>
-            <p>Excelência operacional é um problema de produto. As melhores intervenções não foram mudanças de processo — foram sistemas que anteciparam falhas, automatizaram a resposta e liberaram as pessoas para focar nas exceções que exigem julgamento. <em>Você não conserta o que não consegue enxergar.</em></p>
-            <div class="case-section-label" style="margin-top:1rem">Ferramentas</div>
-            <div class="tools-row">
-              <span class="tool-tag">SQL</span>
-              <span class="tool-tag">Amplitude</span>
-              <span class="tool-tag">Looker</span>
-              <span class="tool-tag">Jira</span>
-              <span class="tool-tag">Bots de automação</span>
-              <span class="tool-tag">Alertas em tempo real</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CANCELLATIONS -->
-      <div class="case" id="case-cancel">
-        <div class="case-header" onclick="toggleCase('case-cancel')">
-          <div class="case-header-left">
-            <div class="case-num">02 · Marketplace LATAM · 2026</div>
-            <div class="case-name">Redesenho da UX de Cancelamentos</div>
-            <span class="case-metric">Mais de 1.700 pedidos salvos por semana · 9 países</span>
-          </div>
-          <div class="case-toggle">+</div>
-        </div>
-        <div class="case-body">
-          <div class="case-content">
-            <div class="case-section-label">O problema</div>
-            <p>Quando o usuário queria cancelar um pedido, o fluxo ia direto para a confirmação — sem tentar entender o porquê nem oferecer alternativas. Muitas intenções de cancelamento eram, na verdade, <strong>problemas resolvíveis</strong>: endereço errado, meio de pagamento preferido indisponível ou pedido atrasado. O resultado era perda de pedido evitável, impacto em receita e uma experiência ruim para quem teria ficado se recebesse a opção certa no momento certo.</p>
-            <hr/>
-            <div class="case-section-label">Abordagem</div>
-            <p>Em vez de aceitar o cancelamento como desfecho padrão, o novo fluxo <strong>intercepta o momento da intenção</strong> e apresenta alternativas relevantes: trocar o endereço de entrega, mudar o meio de pagamento ou aceitar uma compensação para esperar um pedido atrasado. Cada opção aparece de forma condicional — só quando é tecnicamente viável e faz sentido no contexto. A opção certa no momento certo gera retenção; uma irrelevante gera fricção.</p>
-            <hr/>
-            <div class="case-section-label">Decisões-chave</div>
-            <p><strong>Base primeiro:</strong> modernizei a infraestrutura técnica com o time de engenharia antes de lançar qualquer UX nova — para não construir sobre uma base frágil que limitaria as próximas iterações.</p>
-            <p><strong>Lógica orientada a contexto:</strong> desenhei regras de quando mostrar cada opção de modificação com base no status do pedido, na vertical e no motivo do cancelamento — nada de tela única para tudo.</p>
-            <p><strong>Validação incremental:</strong> lancei primeiro a compensação por atraso, a intervenção mais simples e mensurável — gerando prova de conceito antes de investir em fluxos de modificação mais complexos.</p>
-            <hr/>
-            <div class="case-section-label">Meu papel</div>
-            <p>Ownership do PRD de ponta a ponta · Enquadramento do problema &amp; escopo da solução · Alinhamento cross-funcional com engenharia, design, dados e operação · Design de teste A/B &amp; definição de métricas · Priorização da ordem de rollout entre os tipos de modificação.</p>
-            <hr/>
-            <div class="case-section-label">Impacto</div>
-            <div class="metrics-grid">
-              <div class="metric-item">
-                <div class="metric-value">1.700</div>
-                <div class="metric-label">Pedidos salvos por semana via oferta de compensação</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-value">3</div>
-                <div class="metric-label">Tipos de modificação: endereço, pagamento, horário</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-value">9</div>
-                <div class="metric-label">Países no marketplace LATAM</div>
-              </div>
-            </div>
-            <div class="case-section-label">Ferramentas</div>
-            <div class="tools-row">
-              <span class="tool-tag">Amplitude</span>
-              <span class="tool-tag">Figma</span>
-              <span class="tool-tag">Jira</span>
-              <span class="tool-tag">Testes A/B</span>
-              <span class="tool-tag">SQL</span>
-            </div>
-            <hr/>
-            <div class="case-section-label">Iniciativa relacionada — integração VoIP (Amazon Chime)</div>
-            <p>Liderei o escopo, a especificação e a entrega de uma integração VoIP com o Amazon Chime — cobrindo fluxos de permissão e lógica de fallback para Android e iOS. <strong>Lançada para 80% da base de usuários</strong>. Feita para melhorar a comunicação entre entregador e cliente, reduzir cancelamentos por "cliente ausente" e diminuir as reclamações de pedido não entregue.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ORDER NOT DELIVERED -->
-      <div class="case" id="case-ond">
-        <div class="case-header" onclick="toggleCase('case-ond')">
-          <div class="case-header-left">
-            <div class="case-num">03 · Marketplace LATAM · guarda-chuva do OCC</div>
-            <div class="case-name">Pedido Não Entregue — Microsserviço de Evidência de Entrega</div>
-            <span class="case-metric">Dezenas de milhares economizados/mês · diagnóstico em &lt;5 seg · 9 países</span>
-          </div>
-          <div class="case-toggle">+</div>
-        </div>
-        <div class="case-body">
-          <div class="case-content">
-            <div class="case-section-label">O problema</div>
-            <p>Todo dia, milhares de clientes abriam tickets de suporte dizendo que o pedido nunca chegou. O suporte não tinha como saber quem falava a verdade — o entregador dizia ter entregue, o cliente dizia o contrário. Sem um sistema de evidências, o padrão era compensar o cliente para evitar risco. Isso criava dois problemas: <strong>custos mensais relevantes com pagamentos indevidos</strong> e nenhuma forma de identificar padrões de fraude ou má conduta de entregadores.</p>
-            <hr/>
-            <div class="case-section-label">Abordagem</div>
-            <p>Em vez de depender de revisão manual caso a caso, liderei o desenvolvimento de um microsserviço que analisa automaticamente todo o ciclo de vida do pedido no momento em que o cliente abre um ticket. O insight-chave: <strong>a evidência já existia nos nossos sistemas</strong> — geolocalização, fotos, timestamps, histórico de chat. Só precisávamos conectar tudo e trazer à tona no momento certo, antes de um humano decidir.</p>
-            <hr/>
-            <div class="case-section-label">Decisões-chave</div>
-            <p><strong>Priorizei 'pedido não entregue'</strong> frente a outros tipos de defeito (produto danificado, má qualidade) porque era o de maior fricção para o usuário e com a trilha de evidências mais rica.</p>
-            <p><strong>Montei o diagnóstico no momento de criação do ticket</strong> — para o agente de suporte receber a evidência antes de decidir, não depois.</p>
-            <p><strong>Desenhei o resultado como uma recomendação clara</strong> (evidência encontrada / não encontrada) em vez de dados crus — reduzindo a carga cognitiva dos agentes e padronizando as decisões entre times.</p>
-            <p><strong>Lancei primeiro em mercados menores</strong> (Uruguai, Peru) como experimento controlado. Os resultados iniciais ficaram abaixo do esperado, então refinamos o modelo antes de expandir para mercados maiores.</p>
-            <hr/>
-            <div class="case-section-label">Meu papel</div>
-            <p>Enquadramento do problema de ponta a ponta &amp; escopo da solução · Alinhamento com os times de engenharia e suporte · Racional de priorização &amp; sequência de rollout · Design de experimentos &amp; iteração pós-lançamento.</p>
-            <hr/>
-            <div class="case-section-label">Impacto</div>
-            <div class="metrics-grid">
-              <div class="metric-item">
-                <div class="metric-value">dezenas de mil</div>
-                <div class="metric-label">Redução mensal em pagamentos indevidos</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-value">&lt;5 seg</div>
-                <div class="metric-label">Tempo para gerar o diagnóstico de entrega</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-value">9</div>
-                <div class="metric-label">Países após o rollout completo</div>
-              </div>
-            </div>
-            <div class="case-section-label">O que aprendi</div>
-            <p>Além da economia, o sistema criou um padrão consistente e orientado a dados para resolver entregas contestadas — reduzindo a variação entre agentes e países. A evidência sempre esteve lá. O problema de produto era trazê-la à tona no momento certo.</p>
-            <div class="case-section-label" style="margin-top:1rem">Ferramentas</div>
-            <div class="tools-row">
-              <span class="tool-tag">Arquitetura de microsserviços</span>
-              <span class="tool-tag">Dados de geolocalização</span>
-              <span class="tool-tag">SQL</span>
-              <span class="tool-tag">Design de experimentos</span>
-              <span class="tool-tag">Ferramentas de suporte</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="cases collapsed">
 
       <!-- HOTZONES -->
       <div class="case" id="case-hot">
         <div class="case-header" onclick="toggleCase('case-hot')">
           <div class="case-header-left">
-            <div class="case-num">04 · Projeto pessoal · 2025</div>
+            <div class="case-num">01 · Projeto pessoal · 2025</div>
             <div class="case-name">Hotzones MVP — Mapa de Previsão de Demanda</div>
             <span class="case-metric">Feito sozinha · IA + AWS · Demo ao vivo ↗</span>
           </div>
@@ -1044,7 +887,7 @@ footer {
       <div class="case" id="case-pdg">
         <div class="case-header" onclick="toggleCase('case-pdg')">
           <div class="case-header-left">
-            <div class="case-num">05 · Projeto pessoal · 2026</div>
+            <div class="case-num">02 · Projeto pessoal · 2026</div>
             <div class="case-name">Playlist da Galera — Playlists Colaborativas de Rolê</div>
             <span class="case-metric">Feito com IA · Sem login · Demo ao vivo ↗</span>
           </div>
@@ -1101,7 +944,7 @@ footer {
       <div class="case" id="case-fraud">
         <div class="case-header" onclick="toggleCase('case-fraud')">
           <div class="case-header-left">
-            <div class="case-num">06 · Projeto pessoal · Em andamento</div>
+            <div class="case-num">03 · Projeto pessoal · Em andamento</div>
             <div class="case-name">Detecção de Fraude com IA — Pipeline de Cadastro de Entregadores</div>
             <span class="case-metric">Iniciativa própria · Claude Code · Python · Em andamento</span>
           </div>
@@ -1137,11 +980,67 @@ footer {
         </div>
       </div>
 
+      <!-- ORDER NOT DELIVERED -->
+      <div class="case" id="case-ond">
+        <div class="case-header" onclick="toggleCase('case-ond')">
+          <div class="case-header-left">
+            <div class="case-num">04 · Marketplace LATAM · guarda-chuva do OCC</div>
+            <div class="case-name">Pedido Não Entregue — Microsserviço de Evidência de Entrega</div>
+            <span class="case-metric">Dezenas de milhares economizados/mês · diagnóstico em &lt;5 seg · 9 países</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <div class="case-section-label">O problema</div>
+            <p>Todo dia, milhares de clientes abriam tickets de suporte dizendo que o pedido nunca chegou. O suporte não tinha como saber quem falava a verdade — o entregador dizia ter entregue, o cliente dizia o contrário. Sem um sistema de evidências, o padrão era compensar o cliente para evitar risco. Isso criava dois problemas: <strong>custos mensais relevantes com pagamentos indevidos</strong> e nenhuma forma de identificar padrões de fraude ou má conduta de entregadores.</p>
+            <hr/>
+            <div class="case-section-label">Abordagem</div>
+            <p>Em vez de depender de revisão manual caso a caso, liderei o desenvolvimento de um microsserviço que analisa automaticamente todo o ciclo de vida do pedido no momento em que o cliente abre um ticket. O insight-chave: <strong>a evidência já existia nos nossos sistemas</strong> — geolocalização, fotos, timestamps, histórico de chat. Só precisávamos conectar tudo e trazer à tona no momento certo, antes de um humano decidir.</p>
+            <hr/>
+            <div class="case-section-label">Decisões-chave</div>
+            <p><strong>Priorizei 'pedido não entregue'</strong> frente a outros tipos de defeito (produto danificado, má qualidade) porque era o de maior fricção para o usuário e com a trilha de evidências mais rica.</p>
+            <p><strong>Montei o diagnóstico no momento de criação do ticket</strong> — para o agente de suporte receber a evidência antes de decidir, não depois.</p>
+            <p><strong>Desenhei o resultado como uma recomendação clara</strong> (evidência encontrada / não encontrada) em vez de dados crus — reduzindo a carga cognitiva dos agentes e padronizando as decisões entre times.</p>
+            <p><strong>Lancei primeiro em mercados menores</strong> (Uruguai, Peru) como experimento controlado. Os resultados iniciais ficaram abaixo do esperado, então refinamos o modelo antes de expandir para mercados maiores.</p>
+            <hr/>
+            <div class="case-section-label">Meu papel</div>
+            <p>Enquadramento do problema de ponta a ponta &amp; escopo da solução · Alinhamento com os times de engenharia e suporte · Racional de priorização &amp; sequência de rollout · Design de experimentos &amp; iteração pós-lançamento.</p>
+            <hr/>
+            <div class="case-section-label">Impacto</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">dezenas de mil</div>
+                <div class="metric-label">Redução mensal em pagamentos indevidos</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">&lt;5 seg</div>
+                <div class="metric-label">Tempo para gerar o diagnóstico de entrega</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">9</div>
+                <div class="metric-label">Países após o rollout completo</div>
+              </div>
+            </div>
+            <div class="case-section-label">O que aprendi</div>
+            <p>Além da economia, o sistema criou um padrão consistente e orientado a dados para resolver entregas contestadas — reduzindo a variação entre agentes e países. A evidência sempre esteve lá. O problema de produto era trazê-la à tona no momento certo.</p>
+            <div class="case-section-label" style="margin-top:1rem">Ferramentas</div>
+            <div class="tools-row">
+              <span class="tool-tag">Arquitetura de microsserviços</span>
+              <span class="tool-tag">Dados de geolocalização</span>
+              <span class="tool-tag">SQL</span>
+              <span class="tool-tag">Design de experimentos</span>
+              <span class="tool-tag">Ferramentas de suporte</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- ROUND BORDER -->
       <div class="case" id="case-rb">
         <div class="case-header" onclick="toggleCase('case-rb')">
           <div class="case-header-left">
-            <div class="case-num">07 · Marketplace LATAM · Líder de Operações</div>
+            <div class="case-num">05 · Marketplace LATAM · Líder de Operações</div>
             <div class="case-name">Round Border — Fechamento Automático de Lojas em Grandes Eventos</div>
             <span class="case-metric">9 países · 100% automatizado · 2 modos de fechamento</span>
           </div>
@@ -1199,8 +1098,124 @@ footer {
         </div>
       </div>
 
+      <!-- OCC -->
+      <div class="case more" id="case-occ">
+        <div class="case-header" onclick="toggleCase('case-occ')">
+          <div class="case-header-left">
+            <div class="case-num">06 · Marketplace LATAM · 2020–2023</div>
+            <div class="case-name">Ops Control Center (OCC)</div>
+            <span class="case-metric">Centenas de milhares economizados/ano · resposta &lt;5 min · 9 países</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <div class="case-section-label">O problema</div>
+            <p>A operação de um grande marketplace da América Latina era reativa por natureza. Quando uma integração de restaurante caía, um processador de pagamento saía do ar ou o desequilíbrio entre oferta e demanda disparava, o time descobria os problemas pelas <strong>reclamações dos clientes — não por detecção antecipada</strong>. Responder a um incidente levava mais de uma hora. A essa altura, centenas de pedidos já tinham sido afetados e o custo de recuperação era alto. Sem monitoramento centralizado, sem automação, sem um playbook comum entre os países.</p>
+            <hr/>
+            <div class="case-section-label">Abordagem</div>
+            <p>Em vez de remendar problemas isolados, foquei em construir infraestrutura para uma operação proativa — um sistema capaz de detectar anomalias em tempo real, direcioná-las às pessoas certas e resolvê-las antes de escalarem. <strong>Base antes de headcount</strong>: primeiro as ferramentas, depois a estrutura de time.</p>
+            <hr/>
+            <div class="case-section-label">Decisões e projetos-chave</div>
+            <p><strong>Mais de 100 alertas em tempo real</strong> criados do zero para detectar anomalias em integrações, pagamentos, performance de restaurantes e oferta — todas as verticais, 9 países.</p>
+            <p><strong>Mais de 10 bots de automação</strong> para escalonamento, contenção e reporte — eliminando trabalho manual que antes exigia gente dedicada.</p>
+            <p><strong>Framework de operação para feriados:</strong> playbooks plug-and-play para os dias de pico — pré-ativando regras de monitoramento e times de resposta antes que os incidentes acontecessem.</p>
+            <hr/>
+            <div class="case-section-label">Meu papel</div>
+            <p>Estratégia &amp; design do OCC · Ownership do produto de backoffice · Arquitetura &amp; documentação de processos · Tradução entre operação e tecnologia · Alinhamento cross-funcional · Eficiência de time &amp; automação.</p>
+            <hr/>
+            <div class="case-section-label">Impacto</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">&lt;5 min</div>
+                <div class="metric-label">Resposta a incidentes (de 1+ hora)</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">centenas de mil</div>
+                <div class="metric-label">Economia anual via automação</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">150→30</div>
+                <div class="metric-label">Tamanho do time de ops via automação</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">9</div>
+                <div class="metric-label">Países, todas as verticais</div>
+              </div>
+            </div>
+            <div class="case-section-label">O que aprendi</div>
+            <p>Excelência operacional é um problema de produto. As melhores intervenções não foram mudanças de processo — foram sistemas que anteciparam falhas, automatizaram a resposta e liberaram as pessoas para focar nas exceções que exigem julgamento. <em>Você não conserta o que não consegue enxergar.</em></p>
+            <div class="case-section-label" style="margin-top:1rem">Ferramentas</div>
+            <div class="tools-row">
+              <span class="tool-tag">SQL</span>
+              <span class="tool-tag">Amplitude</span>
+              <span class="tool-tag">Looker</span>
+              <span class="tool-tag">Jira</span>
+              <span class="tool-tag">Bots de automação</span>
+              <span class="tool-tag">Alertas em tempo real</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CANCELLATIONS -->
+      <div class="case more" id="case-cancel">
+        <div class="case-header" onclick="toggleCase('case-cancel')">
+          <div class="case-header-left">
+            <div class="case-num">07 · Marketplace LATAM · 2026</div>
+            <div class="case-name">Redesenho da UX de Cancelamentos</div>
+            <span class="case-metric">Mais de 1.700 pedidos salvos por semana · 9 países</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <div class="case-section-label">O problema</div>
+            <p>Quando o usuário queria cancelar um pedido, o fluxo ia direto para a confirmação — sem tentar entender o porquê nem oferecer alternativas. Muitas intenções de cancelamento eram, na verdade, <strong>problemas resolvíveis</strong>: endereço errado, meio de pagamento preferido indisponível ou pedido atrasado. O resultado era perda de pedido evitável, impacto em receita e uma experiência ruim para quem teria ficado se recebesse a opção certa no momento certo.</p>
+            <hr/>
+            <div class="case-section-label">Abordagem</div>
+            <p>Em vez de aceitar o cancelamento como desfecho padrão, o novo fluxo <strong>intercepta o momento da intenção</strong> e apresenta alternativas relevantes: trocar o endereço de entrega, mudar o meio de pagamento ou aceitar uma compensação para esperar um pedido atrasado. Cada opção aparece de forma condicional — só quando é tecnicamente viável e faz sentido no contexto. A opção certa no momento certo gera retenção; uma irrelevante gera fricção.</p>
+            <hr/>
+            <div class="case-section-label">Decisões-chave</div>
+            <p><strong>Base primeiro:</strong> modernizei a infraestrutura técnica com o time de engenharia antes de lançar qualquer UX nova — para não construir sobre uma base frágil que limitaria as próximas iterações.</p>
+            <p><strong>Lógica orientada a contexto:</strong> desenhei regras de quando mostrar cada opção de modificação com base no status do pedido, na vertical e no motivo do cancelamento — nada de tela única para tudo.</p>
+            <p><strong>Validação incremental:</strong> lancei primeiro a compensação por atraso, a intervenção mais simples e mensurável — gerando prova de conceito antes de investir em fluxos de modificação mais complexos.</p>
+            <hr/>
+            <div class="case-section-label">Meu papel</div>
+            <p>Ownership do PRD de ponta a ponta · Enquadramento do problema &amp; escopo da solução · Alinhamento cross-funcional com engenharia, design, dados e operação · Design de teste A/B &amp; definição de métricas · Priorização da ordem de rollout entre os tipos de modificação.</p>
+            <hr/>
+            <div class="case-section-label">Impacto</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">1.700</div>
+                <div class="metric-label">Pedidos salvos por semana via oferta de compensação</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Tipos de modificação: endereço, pagamento, horário</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">9</div>
+                <div class="metric-label">Países no marketplace LATAM</div>
+              </div>
+            </div>
+            <div class="case-section-label">Ferramentas</div>
+            <div class="tools-row">
+              <span class="tool-tag">Amplitude</span>
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">Jira</span>
+              <span class="tool-tag">Testes A/B</span>
+              <span class="tool-tag">SQL</span>
+            </div>
+            <hr/>
+            <div class="case-section-label">Iniciativa relacionada — integração VoIP (Amazon Chime)</div>
+            <p>Liderei o escopo, a especificação e a entrega de uma integração VoIP com o Amazon Chime — cobrindo fluxos de permissão e lógica de fallback para Android e iOS. <strong>Lançada para 80% da base de usuários</strong>. Feita para melhorar a comunicação entre entregador e cliente, reduzir cancelamentos por "cliente ausente" e diminuir as reclamações de pedido não entregue.</p>
+          </div>
+        </div>
+      </div>
+
       <!-- WHATSAPP BOT -->
-      <div class="case" id="case-wa">
+      <div class="case more" id="case-wa">
         <div class="case-header" onclick="toggleCase('case-wa')">
           <div class="case-header-left">
             <div class="case-num">08 · Marketplace LATAM · Product Operations</div>
@@ -1245,6 +1260,7 @@ footer {
       </div>
 
     </div>
+    <div class="more-wrap"><button class="more-btn" id="more-btn" onclick="toggleMore()">Ver mais projetos ↓</button></div>
   </div>
 </section>
 
@@ -1437,6 +1453,14 @@ footer {
 </footer>
 
 <script>
+// "See more" — reveal the older marketplace cases
+function toggleMore() {
+  var c = document.querySelector('.cases');
+  var b = document.getElementById('more-btn');
+  var collapsed = c.classList.toggle('collapsed');
+  if (b) b.textContent = collapsed ? 'Ver mais projetos ↓' : 'Ver menos ↑';
+}
+
 // Global wrappers — called before maps init
 function hzToggle() { if (window._hzToggle) window._hzToggle(); }
 function rbMode(mode) { if (window._rbMode) window._rbMode(mode); }

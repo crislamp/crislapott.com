@@ -46,7 +46,7 @@ const pairs = [
    "Oito projetos que mostram a amplitude do que eu construo: de plataformas de monitoramento do zero a redesenhos de UX de consumo, microsserviços de evidência, MVPs geoespaciais, sistemas de detecção de fraude, ferramentas de automação operacional e um app de playlist colaborativa feito de ponta a ponta com IA."],
 
   // ---------- case 08 playlist da galera ----------
-  ["05 · Personal project · 2026", "05 · Projeto pessoal · 2026"],
+  ["02 · Personal project · 2026", "02 · Projeto pessoal · 2026"],
   [">Playlist da Galera — Collaborative Party Playlists</div>", ">Playlist da Galera — Playlists Colaborativas de Rolê</div>"],
   ["Built with AI · No login · Live demo ↗", "Feito com IA · Sem login · Demo ao vivo ↗"],
   ["Every hangout has the same fight: whoever plugs in their phone owns the music, and one person's taste floods the whole night. A shared playlist never quite feels like <em>everyone's</em>.",
@@ -81,7 +81,7 @@ const pairs = [
   [">Tools</div>", ">Ferramentas</div>"],
 
   // ---------- case 01 OCC ----------
-  ["01 · LATAM Marketplace · 2020–2023", "01 · Marketplace LATAM · 2020–2023"],
+  ["06 · LATAM Marketplace · 2020–2023", "06 · Marketplace LATAM · 2020–2023"],
   ["Hundreds of thousands saved/yr · &lt;5 min response · 9 countries",
    "Centenas de milhares economizados/ano · resposta &lt;5 min · 9 países"],
   ["A large LATAM marketplace's operations were reactive by design. When a restaurant integration failed, a payment processor went down, or supply-demand imbalances spiked, the ops team discovered problems through <strong>customer complaints — not early detection</strong>. Incident response took over an hour. By then, hundreds of orders were affected and recovery costs were high. No centralized monitoring, no automation, no shared playbook across countries.",
@@ -106,7 +106,7 @@ const pairs = [
   [">Real-time alerting</span>", ">Alertas em tempo real</span>"],
 
   // ---------- case 02 cancellations ----------
-  ["02 · LATAM Marketplace · 2026", "02 · Marketplace LATAM · 2026"],
+  ["07 · LATAM Marketplace · 2026", "07 · Marketplace LATAM · 2026"],
   [">Cancellations UX Redesign</div>", ">Redesenho da UX de Cancelamentos</div>"],
   ["1,700+ orders saved per week · 9 countries", "Mais de 1.700 pedidos salvos por semana · 9 países"],
   ["When users wanted to cancel an order, the platform's flow went straight to confirmation — with no attempt to understand why or offer alternatives. Many cancellation intents were actually <strong>fixable problems</strong>: wrong address, preferred payment method unavailable, or order running late. The result was avoidable order loss, revenue impact, and a poor experience for users who would have stayed if given the right option at the right moment.",
@@ -130,7 +130,7 @@ const pairs = [
    'Liderei o escopo, a especificação e a entrega de uma integração VoIP com o Amazon Chime — cobrindo fluxos de permissão e lógica de fallback para Android e iOS. <strong>Lançada para 80% da base de usuários</strong>. Feita para melhorar a comunicação entre entregador e cliente, reduzir cancelamentos por "cliente ausente" e diminuir as reclamações de pedido não entregue.'],
 
   // ---------- case 03 OND ----------
-  ["03 · LATAM Marketplace · OCC umbrella", "03 · Marketplace LATAM · guarda-chuva do OCC"],
+  ["04 · LATAM Marketplace · OCC umbrella", "04 · Marketplace LATAM · guarda-chuva do OCC"],
   [">Order Not Delivered — Delivery Evidence Microservice</div>", ">Pedido Não Entregue — Microsserviço de Evidência de Entrega</div>"],
   ["Tens of thousands saved/month · &lt;5 sec diagnosis · 9 countries",
    "Dezenas de milhares economizados/mês · diagnóstico em &lt;5 seg · 9 países"],
@@ -159,7 +159,7 @@ const pairs = [
   [">Support tooling</span>", ">Ferramentas de suporte</span>"],
 
   // ---------- case 04 hotzones ----------
-  ["04 · Personal project · 2025", "04 · Projeto pessoal · 2025"],
+  ["01 · Personal project · 2025", "01 · Projeto pessoal · 2025"],
   [">Hotzones MVP — Demand Forecasting Map</div>", ">Hotzones MVP — Mapa de Previsão de Demanda</div>"],
   ["Built solo · AI + AWS · Live demo ↗", "Feito sozinha · IA + AWS · Demo ao vivo ↗"],
   [">⚡ AI-assisted build</span>", ">⚡ Feito com apoio de IA</span>"],
@@ -179,7 +179,7 @@ const pairs = [
   [">HOTZONE SCORE</div>", ">PONTUAÇÃO HOTZONE</div>"],
 
   // ---------- case 05 fraud ----------
-  ["06 · Personal project · In progress", "06 · Projeto pessoal · Em andamento"],
+  ["03 · Personal project · In progress", "03 · Projeto pessoal · Em andamento"],
   [">AI Fraud-Detection — Driver Onboarding Pipeline</div>", ">Detecção de Fraude com IA — Pipeline de Cadastro de Entregadores</div>"],
   ["Self-initiated · Claude Code · Python · In progress", "Iniciativa própria · Claude Code · Python · Em andamento"],
   [">⚡ AI-native build · Claude Code</span>", ">⚡ Construção AI-native · Claude Code</span>"],
@@ -199,7 +199,7 @@ const pairs = [
   [">Risk scoring logic</span>", ">Lógica de risk scoring</span>"],
 
   // ---------- case 06 round border ----------
-  ["07 · LATAM Marketplace · Operations Lead", "07 · Marketplace LATAM · Líder de Operações"],
+  ["05 · LATAM Marketplace · Operations Lead", "05 · Marketplace LATAM · Líder de Operações"],
   [">Round Border — Automated Store Closures for Mass Events</div>", ">Round Border — Fechamento Automático de Lojas em Grandes Eventos</div>"],
   ["9 countries · 100% automated · 2 closure modes", "9 países · 100% automatizado · 2 modos de fechamento"],
   ["During mass events — carnival street parties, protests, large concerts, elections — the ops team had to <strong>manually identify which stores fell inside the affected area and close them individually</strong> at the right time. This was slow, error-prone, and entirely dependent on someone scanning a map and remembering to act at the exact moment the event started.",
@@ -321,6 +321,10 @@ const pairs = [
   ["Built with HTML · Hosted on GitHub Pages", "Feito com HTML · Hospedado no GitHub Pages"],
   ["⏸ Pause", "⏸ Pausar"],
   ["▶ Play", "▶ Tocar"],
+  // botão "ver mais" (HTML + textos do JS)
+  [">See more projects ↓</button>", ">Ver mais projetos ↓</button>"],
+  ["'See more projects ↓'", "'Ver mais projetos ↓'"],
+  ["'See less ↑'", "'Ver menos ↑'"],
 ];
 
 // aplica do mais longo pro mais curto, pra evitar colisões de substring
