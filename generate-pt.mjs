@@ -46,7 +46,7 @@ const pairs = [
    "Oito projetos que mostram a amplitude do que eu construo: de plataformas de monitoramento do zero a redesenhos de UX de consumo, microsserviços de evidência, MVPs geoespaciais, sistemas de detecção de fraude, ferramentas de automação operacional e um app de playlist colaborativa feito de ponta a ponta com IA."],
 
   // ---------- case 08 playlist da galera ----------
-  ["08 · Personal project · 2026", "08 · Projeto pessoal · 2026"],
+  ["05 · Personal project · 2026", "05 · Projeto pessoal · 2026"],
   [">Playlist da Galera — Collaborative Party Playlists</div>", ">Playlist da Galera — Playlists Colaborativas de Rolê</div>"],
   ["Built with AI · No login · Live demo ↗", "Feito com IA · Sem login · Demo ao vivo ↗"],
   ["Every hangout has the same fight: whoever plugs in their phone owns the music, and one person's taste floods the whole night. A shared playlist never quite feels like <em>everyone's</em>.",
@@ -179,7 +179,7 @@ const pairs = [
   [">HOTZONE SCORE</div>", ">PONTUAÇÃO HOTZONE</div>"],
 
   // ---------- case 05 fraud ----------
-  ["05 · Personal project · In progress", "05 · Projeto pessoal · Em andamento"],
+  ["06 · Personal project · In progress", "06 · Projeto pessoal · Em andamento"],
   [">AI Fraud-Detection — Driver Onboarding Pipeline</div>", ">Detecção de Fraude com IA — Pipeline de Cadastro de Entregadores</div>"],
   ["Self-initiated · Claude Code · Python · In progress", "Iniciativa própria · Claude Code · Python · Em andamento"],
   [">⚡ AI-native build · Claude Code</span>", ">⚡ Construção AI-native · Claude Code</span>"],
@@ -199,7 +199,7 @@ const pairs = [
   [">Risk scoring logic</span>", ">Lógica de risk scoring</span>"],
 
   // ---------- case 06 round border ----------
-  ["06 · LATAM Marketplace · Operations Lead", "06 · Marketplace LATAM · Líder de Operações"],
+  ["07 · LATAM Marketplace · Operations Lead", "07 · Marketplace LATAM · Líder de Operações"],
   [">Round Border — Automated Store Closures for Mass Events</div>", ">Round Border — Fechamento Automático de Lojas em Grandes Eventos</div>"],
   ["9 countries · 100% automated · 2 closure modes", "9 países · 100% automatizado · 2 modos de fechamento"],
   ["During mass events — carnival street parties, protests, large concerts, elections — the ops team had to <strong>manually identify which stores fell inside the affected area and close them individually</strong> at the right time. This was slow, error-prone, and entirely dependent on someone scanning a map and remembering to act at the exact moment the event started.",
@@ -228,7 +228,7 @@ const pairs = [
   ['.25)"></div>Closed', '.25)"></div>Fechada'],
 
   // ---------- case 07 whatsapp ----------
-  ["07 · LATAM Marketplace · Product Operations", "07 · Marketplace LATAM · Product Operations"],
+  ["08 · LATAM Marketplace · Product Operations", "08 · Marketplace LATAM · Product Operations"],
   [">Store Supervisor Automation — WhatsApp Bot</div>", ">Automação de Supervisores de Loja — Bot de WhatsApp</div>"],
   ["~80% reduction in on-site supervisors · 9 countries · 0 drop in quality",
    "~80% menos supervisores presenciais · 9 países · 0 queda de qualidade"],

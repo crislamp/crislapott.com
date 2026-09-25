@@ -1039,11 +1039,68 @@ footer {
         </div>
       </div>
 
+      <!-- PLAYLIST DA GALERA -->
+      <div class="case" id="case-pdg">
+        <div class="case-header" onclick="toggleCase('case-pdg')">
+          <div class="case-header-left">
+            <div class="case-num">05 · Personal project · 2026</div>
+            <div class="case-name">Playlist da Galera — Collaborative Party Playlists</div>
+            <span class="case-metric">Built with AI · No login · Live demo ↗</span>
+          </div>
+          <div class="case-toggle">+</div>
+        </div>
+        <div class="case-body">
+          <div class="case-content">
+            <span class="ai-badge">⚡ AI-native build · Claude Code</span>
+            <div class="case-section-label">The problem</div>
+            <p>Every hangout has the same fight: whoever plugs in their phone owns the music, and one person's taste floods the whole night. A shared playlist never quite feels like <em>everyone's</em>.</p>
+            <hr/>
+            <div class="case-section-label">What I built</div>
+            <p>A web app where everyone drops the songs they like — by pasting a public Spotify or YouTube playlist, or just searching, <strong>with no login</strong> — and the app blends them into a single set with two rules: <strong>fairness</strong> (nobody monopolizes; equal space per person) and <strong>flow</strong> (an energy arc that starts calm and builds to the peak of the night, like a DJ). It plays right inside the app — cast to a TV through the clips — or exports to Spotify.</p>
+            <hr/>
+            <div class="case-section-label">How it works</div>
+            <p><strong>Blend:</strong> dedupes shared songs into "anchors", gives every person an equal quota, and orders tracks along an exponential energy arc toward the end-of-night anthems. <strong>Vibe:</strong> reads each track's mood from Last.fm tags (Spotify retired audio-features). <strong>No login at scale:</strong> resolves songs and clips by reading public Spotify/YouTube pages directly, bypassing the platforms' account and quota limits — so anyone can contribute and play without signing in. <strong>Stack:</strong> React · Vite · Supabase Edge Functions · Last.fm · Vercel.</p>
+            <hr/>
+            <div class="case-section-label">How AI was used</div>
+            <p>Built end-to-end with Claude Code over a weekend — the blend algorithm, caching, the in-app player, PT/EN i18n, PWA, and deploy. I described the problem and made the product calls; the AI wrote the code while I tested and steered. The hardest part wasn't the code — it was deciding what to cut and designing the experience around what the platforms actually allow.</p>
+            <hr/>
+            <div class="case-section-label">Impact</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <div class="metric-value">1 weekend</div>
+                <div class="metric-label">Concept to live, solo</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">0 login</div>
+                <div class="metric-label">To contribute, blend and play</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">PT / EN</div>
+                <div class="metric-label">Bilingual · installable (PWA)</div>
+              </div>
+            </div>
+            <div class="case-section-label" style="margin-top:1rem">Tools</div>
+            <div class="tools-row">
+              <span class="tool-tag">React</span>
+              <span class="tool-tag">Vite</span>
+              <span class="tool-tag">Supabase</span>
+              <span class="tool-tag">Last.fm API</span>
+              <span class="tool-tag">YouTube Data API</span>
+              <span class="tool-tag">Spotify Web API</span>
+              <span class="tool-tag">Vercel</span>
+              <span class="tool-tag">Claude Code</span>
+            </div>
+            <a class="case-link" href="https://playlist-da-galera.vercel.app" target="_blank" rel="noopener">View live ↗</a>
+            <a class="case-link" href="https://github.com/crislamp/playlist-da-galera" target="_blank" rel="noopener">Source on GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+
       <!-- FRAUD DETECTION -->
       <div class="case" id="case-fraud">
         <div class="case-header" onclick="toggleCase('case-fraud')">
           <div class="case-header-left">
-            <div class="case-num">05 · Personal project · In progress</div>
+            <div class="case-num">06 · Personal project · In progress</div>
             <div class="case-name">AI Fraud-Detection — Driver Onboarding Pipeline</div>
             <span class="case-metric">Self-initiated · Claude Code · Python · In progress</span>
           </div>
@@ -1083,7 +1140,7 @@ footer {
       <div class="case" id="case-rb">
         <div class="case-header" onclick="toggleCase('case-rb')">
           <div class="case-header-left">
-            <div class="case-num">06 · LATAM Marketplace · Operations Lead</div>
+            <div class="case-num">07 · LATAM Marketplace · Operations Lead</div>
             <div class="case-name">Round Border — Automated Store Closures for Mass Events</div>
             <span class="case-metric">9 countries · 100% automated · 2 closure modes</span>
           </div>
@@ -1145,7 +1202,7 @@ footer {
       <div class="case" id="case-wa">
         <div class="case-header" onclick="toggleCase('case-wa')">
           <div class="case-header-left">
-            <div class="case-num">07 · LATAM Marketplace · Product Operations</div>
+            <div class="case-num">08 · LATAM Marketplace · Product Operations</div>
             <div class="case-name">Store Supervisor Automation — WhatsApp Bot</div>
             <span class="case-metric">~80% reduction in on-site supervisors · 9 countries · 0 drop in quality</span>
           </div>
@@ -1182,63 +1239,6 @@ footer {
                 <div class="metric-label">Drop in in-store quality metrics</div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PLAYLIST DA GALERA -->
-      <div class="case" id="case-pdg">
-        <div class="case-header" onclick="toggleCase('case-pdg')">
-          <div class="case-header-left">
-            <div class="case-num">08 · Personal project · 2026</div>
-            <div class="case-name">Playlist da Galera — Collaborative Party Playlists</div>
-            <span class="case-metric">Built with AI · No login · Live demo ↗</span>
-          </div>
-          <div class="case-toggle">+</div>
-        </div>
-        <div class="case-body">
-          <div class="case-content">
-            <span class="ai-badge">⚡ AI-native build · Claude Code</span>
-            <div class="case-section-label">The problem</div>
-            <p>Every hangout has the same fight: whoever plugs in their phone owns the music, and one person's taste floods the whole night. A shared playlist never quite feels like <em>everyone's</em>.</p>
-            <hr/>
-            <div class="case-section-label">What I built</div>
-            <p>A web app where everyone drops the songs they like — by pasting a public Spotify or YouTube playlist, or just searching, <strong>with no login</strong> — and the app blends them into a single set with two rules: <strong>fairness</strong> (nobody monopolizes; equal space per person) and <strong>flow</strong> (an energy arc that starts calm and builds to the peak of the night, like a DJ). It plays right inside the app — cast to a TV through the clips — or exports to Spotify.</p>
-            <hr/>
-            <div class="case-section-label">How it works</div>
-            <p><strong>Blend:</strong> dedupes shared songs into "anchors", gives every person an equal quota, and orders tracks along an exponential energy arc toward the end-of-night anthems. <strong>Vibe:</strong> reads each track's mood from Last.fm tags (Spotify retired audio-features). <strong>No login at scale:</strong> resolves songs and clips by reading public Spotify/YouTube pages directly, bypassing the platforms' account and quota limits — so anyone can contribute and play without signing in. <strong>Stack:</strong> React · Vite · Supabase Edge Functions · Last.fm · Vercel.</p>
-            <hr/>
-            <div class="case-section-label">How AI was used</div>
-            <p>Built end-to-end with Claude Code over a weekend — the blend algorithm, caching, the in-app player, PT/EN i18n, PWA, and deploy. I described the problem and made the product calls; the AI wrote the code while I tested and steered. The hardest part wasn't the code — it was deciding what to cut and designing the experience around what the platforms actually allow.</p>
-            <hr/>
-            <div class="case-section-label">Impact</div>
-            <div class="metrics-grid">
-              <div class="metric-item">
-                <div class="metric-value">1 weekend</div>
-                <div class="metric-label">Concept to live, solo</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-value">0 login</div>
-                <div class="metric-label">To contribute, blend and play</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-value">PT / EN</div>
-                <div class="metric-label">Bilingual · installable (PWA)</div>
-              </div>
-            </div>
-            <div class="case-section-label" style="margin-top:1rem">Tools</div>
-            <div class="tools-row">
-              <span class="tool-tag">React</span>
-              <span class="tool-tag">Vite</span>
-              <span class="tool-tag">Supabase</span>
-              <span class="tool-tag">Last.fm API</span>
-              <span class="tool-tag">YouTube Data API</span>
-              <span class="tool-tag">Spotify Web API</span>
-              <span class="tool-tag">Vercel</span>
-              <span class="tool-tag">Claude Code</span>
-            </div>
-            <a class="case-link" href="https://playlist-da-galera.vercel.app" target="_blank" rel="noopener">View live ↗</a>
-            <a class="case-link" href="https://github.com/crislamp/playlist-da-galera" target="_blank" rel="noopener">Source on GitHub ↗</a>
           </div>
         </div>
       </div>
