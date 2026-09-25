@@ -79,17 +79,16 @@ nav {
 .nav-links a:hover { color: var(--accent); }
 .nav-right { display: flex; align-items: center; gap: 1.5rem; }
 .lang-switch {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: var(--ink-3);
+  font-size: 1.15rem;
+  line-height: 1;
   text-decoration: none;
   border: 1px solid var(--rule);
-  border-radius: 2px;
-  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
   transition: all 0.2s;
+  filter: saturate(1.05);
 }
-.lang-switch:hover { color: var(--accent); border-color: var(--ink-3); }
+.lang-switch:hover { border-color: var(--accent); transform: translateY(-1px); }
 
 /* ── Hero ── */
 .hero {
@@ -728,7 +727,7 @@ footer {
       <li><a href="#education">Formação</a></li>
       <li><a href="#contact">Contato</a></li>
     </ul>
-    <a class="lang-switch" href="index.html">EN</a>
+    <a class="lang-switch" href="index.html" title="English" aria-label="View in English">🇺🇸</a>
     </div>
   </div>
 </nav>

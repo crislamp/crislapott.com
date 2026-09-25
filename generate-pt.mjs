@@ -10,7 +10,7 @@ const pairs = [
   ["Crisla Pott · Senior Product Manager", "Crisla Pott · Product Manager Sênior"],
   ["Senior PM with 8 years at Rappi. Backoffice products, real-time monitoring, post-order UX across 9 LATAM countries.",
    "PM sênior com 8 anos de Rappi. Produtos de backoffice, monitoramento em tempo real e UX de pós-pedido em 9 países da América Latina."],
-  ['href="pt.html">PT</a>', 'href="index.html">EN</a>'],
+  ['href="pt.html" title="Português" aria-label="Ver em português">🇧🇷</a>', 'href="index.html" title="English" aria-label="View in English">🇺🇸</a>'],
   [">Work</a>", ">Trabalho</a>"],
   [">Skills</a>", ">Habilidades</a>"],
   [">Career</a>", ">Carreira</a>"],
